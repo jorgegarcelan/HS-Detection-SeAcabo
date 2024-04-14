@@ -1,0 +1,966 @@
+2024-02-16 17:52:20 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8001
+2024-02-16 17:52:20 INFO [33mPress CTRL+C to quit[0m
+2024-02-16 17:54:27 INFO 127.0.0.1 - - [16/Feb/2024 17:54:27] "GET / HTTP/1.1" 200 -
+2024-02-16 17:54:27 INFO 127.0.0.1 - - [16/Feb/2024 17:54:27] "[33mGET /static/css/styles.css HTTP/1.1[0m" 404 -
+2024-02-16 17:54:27 INFO 127.0.0.1 - - [16/Feb/2024 17:54:27] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 17:54:27 INFO 127.0.0.1 - - [16/Feb/2024 17:54:27] "[33mGET /static/imgs/spinner.gif HTTP/1.1[0m" 404 -
+2024-02-16 17:54:27 INFO 127.0.0.1 - - [16/Feb/2024 17:54:27] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 17:54:27 INFO 127.0.0.1 - - [16/Feb/2024 17:54:27] "[33mGET /static/icons/Internet_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 17:54:27 INFO 127.0.0.1 - - [16/Feb/2024 17:54:27] "[33mGET /static/icons/Carpeta_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 17:54:27 INFO 127.0.0.1 - - [16/Feb/2024 17:54:27] "[33mGET /static/icons/Editar2_2Regular.svg HTTP/1.1[0m" 404 -
+2024-02-16 17:54:27 INFO 127.0.0.1 - - [16/Feb/2024 17:54:27] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 17:54:27 INFO 127.0.0.1 - - [16/Feb/2024 17:54:27] "GET /static/imgs/dadom.png HTTP/1.1" 200 -
+2024-02-16 17:54:27 INFO 127.0.0.1 - - [16/Feb/2024 17:54:27] "[33mGET /static/imgs/labs_logo.png HTTP/1.1[0m" 404 -
+2024-02-16 17:54:28 INFO 127.0.0.1 - - [16/Feb/2024 17:54:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-02-16 17:55:32 INFO 127.0.0.1 - - [16/Feb/2024 17:55:32] "GET / HTTP/1.1" 200 -
+2024-02-16 17:55:32 INFO 127.0.0.1 - - [16/Feb/2024 17:55:32] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-02-16 17:55:32 INFO 127.0.0.1 - - [16/Feb/2024 17:55:32] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 17:55:32 INFO 127.0.0.1 - - [16/Feb/2024 17:55:32] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 17:55:32 INFO 127.0.0.1 - - [16/Feb/2024 17:55:32] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 17:55:32 INFO 127.0.0.1 - - [16/Feb/2024 17:55:32] "[33mGET /static/icons/Editar2_2Regular.svg HTTP/1.1[0m" 404 -
+2024-02-16 17:55:32 INFO 127.0.0.1 - - [16/Feb/2024 17:55:32] "[33mGET /static/icons/Carpeta_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 17:55:32 INFO 127.0.0.1 - - [16/Feb/2024 17:55:32] "[33mGET /static/icons/Internet_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 17:55:32 INFO 127.0.0.1 - - [16/Feb/2024 17:55:32] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 17:55:32 INFO 127.0.0.1 - - [16/Feb/2024 17:55:32] "[33mGET /static/imgs/labs_logo.png HTTP/1.1[0m" 404 -
+2024-02-16 17:55:32 INFO 127.0.0.1 - - [16/Feb/2024 17:55:32] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 17:55:32 INFO 127.0.0.1 - - [16/Feb/2024 17:55:32] "[33mGET /static/imgs/spinner.gif HTTP/1.1[0m" 404 -
+2024-02-16 18:00:22 INFO 127.0.0.1 - - [16/Feb/2024 18:00:22] "GET / HTTP/1.1" 200 -
+2024-02-16 18:00:22 INFO 127.0.0.1 - - [16/Feb/2024 18:00:22] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-02-16 18:00:22 INFO 127.0.0.1 - - [16/Feb/2024 18:00:22] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:00:22 INFO 127.0.0.1 - - [16/Feb/2024 18:00:22] "[33mGET /static/icons/Editar2_2Regular.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:00:22 INFO 127.0.0.1 - - [16/Feb/2024 18:00:22] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:00:22 INFO 127.0.0.1 - - [16/Feb/2024 18:00:22] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 18:00:22 INFO 127.0.0.1 - - [16/Feb/2024 18:00:22] "[33mGET /static/imgs/labs_logo.png HTTP/1.1[0m" 404 -
+2024-02-16 18:00:22 INFO 127.0.0.1 - - [16/Feb/2024 18:00:22] "[33mGET /static/icons/Internet_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:00:22 INFO 127.0.0.1 - - [16/Feb/2024 18:00:22] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:00:22 INFO 127.0.0.1 - - [16/Feb/2024 18:00:22] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:00:22 INFO 127.0.0.1 - - [16/Feb/2024 18:00:22] "[33mGET /static/imgs/spinner.gif HTTP/1.1[0m" 404 -
+2024-02-16 18:00:22 INFO 127.0.0.1 - - [16/Feb/2024 18:00:22] "[33mGET /static/icons/Carpeta_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:00:22 INFO 127.0.0.1 - - [16/Feb/2024 18:00:22] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 18:00:50 INFO 127.0.0.1 - - [16/Feb/2024 18:00:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-02-16 18:01:14 INFO 127.0.0.1 - - [16/Feb/2024 18:01:14] "GET / HTTP/1.1" 200 -
+2024-02-16 18:01:14 INFO 127.0.0.1 - - [16/Feb/2024 18:01:14] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-02-16 18:01:14 INFO 127.0.0.1 - - [16/Feb/2024 18:01:14] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:01:14 INFO 127.0.0.1 - - [16/Feb/2024 18:01:14] "[33mGET /static/icons/Internet_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:01:14 INFO 127.0.0.1 - - [16/Feb/2024 18:01:14] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:01:14 INFO 127.0.0.1 - - [16/Feb/2024 18:01:14] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:01:14 INFO 127.0.0.1 - - [16/Feb/2024 18:01:14] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:01:14 INFO 127.0.0.1 - - [16/Feb/2024 18:01:14] "[33mGET /static/icons/Carpeta_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:01:14 INFO 127.0.0.1 - - [16/Feb/2024 18:01:14] "[33mGET /static/icons/Editar2_2Regular.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:01:14 INFO 127.0.0.1 - - [16/Feb/2024 18:01:14] "[33mGET /static/imgs/labs_logo.png HTTP/1.1[0m" 404 -
+2024-02-16 18:01:14 INFO 127.0.0.1 - - [16/Feb/2024 18:01:14] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 18:01:14 INFO 127.0.0.1 - - [16/Feb/2024 18:01:14] "[33mGET /static/imgs/spinner.gif HTTP/1.1[0m" 404 -
+2024-02-16 18:01:15 INFO 127.0.0.1 - - [16/Feb/2024 18:01:15] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 18:01:24 INFO 127.0.0.1 - - [16/Feb/2024 18:01:24] "GET / HTTP/1.1" 200 -
+2024-02-16 18:01:24 INFO 127.0.0.1 - - [16/Feb/2024 18:01:24] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-02-16 18:01:25 INFO 127.0.0.1 - - [16/Feb/2024 18:01:25] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:01:25 INFO 127.0.0.1 - - [16/Feb/2024 18:01:25] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:01:25 INFO 127.0.0.1 - - [16/Feb/2024 18:01:25] "[33mGET /static/icons/Carpeta_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:01:25 INFO 127.0.0.1 - - [16/Feb/2024 18:01:25] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:01:25 INFO 127.0.0.1 - - [16/Feb/2024 18:01:25] "[33mGET /static/imgs/labs_logo.png HTTP/1.1[0m" 404 -
+2024-02-16 18:01:25 INFO 127.0.0.1 - - [16/Feb/2024 18:01:25] "[33mGET /static/icons/Editar2_2Regular.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:01:25 INFO 127.0.0.1 - - [16/Feb/2024 18:01:25] "[33mGET /static/icons/Internet_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:01:25 INFO 127.0.0.1 - - [16/Feb/2024 18:01:25] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:01:25 INFO 127.0.0.1 - - [16/Feb/2024 18:01:25] "[33mGET /static/imgs/spinner.gif HTTP/1.1[0m" 404 -
+2024-02-16 18:01:25 INFO 127.0.0.1 - - [16/Feb/2024 18:01:25] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 18:01:25 INFO 127.0.0.1 - - [16/Feb/2024 18:01:25] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 18:01:50 INFO 127.0.0.1 - - [16/Feb/2024 18:01:50] "GET / HTTP/1.1" 200 -
+2024-02-16 18:01:50 INFO 127.0.0.1 - - [16/Feb/2024 18:01:50] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-02-16 18:01:50 INFO 127.0.0.1 - - [16/Feb/2024 18:01:50] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:01:50 INFO 127.0.0.1 - - [16/Feb/2024 18:01:50] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:01:50 INFO 127.0.0.1 - - [16/Feb/2024 18:01:50] "[33mGET /static/icons/Carpeta_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:01:50 INFO 127.0.0.1 - - [16/Feb/2024 18:01:50] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:01:50 INFO 127.0.0.1 - - [16/Feb/2024 18:01:50] "[33mGET /static/imgs/labs_logo.png HTTP/1.1[0m" 404 -
+2024-02-16 18:01:50 INFO 127.0.0.1 - - [16/Feb/2024 18:01:50] "[33mGET /static/icons/Internet_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:01:50 INFO 127.0.0.1 - - [16/Feb/2024 18:01:50] "[33mGET /static/icons/Editar2_2Regular.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:01:50 INFO 127.0.0.1 - - [16/Feb/2024 18:01:50] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:01:50 INFO 127.0.0.1 - - [16/Feb/2024 18:01:50] "[33mGET /static/imgs/spinner.gif HTTP/1.1[0m" 404 -
+2024-02-16 18:01:50 INFO 127.0.0.1 - - [16/Feb/2024 18:01:50] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 18:02:05 INFO 127.0.0.1 - - [16/Feb/2024 18:02:05] "GET / HTTP/1.1" 200 -
+2024-02-16 18:02:05 INFO 127.0.0.1 - - [16/Feb/2024 18:02:05] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-02-16 18:02:05 INFO 127.0.0.1 - - [16/Feb/2024 18:02:05] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:02:05 INFO 127.0.0.1 - - [16/Feb/2024 18:02:05] "[33mGET /static/imgs/labs_logo.png HTTP/1.1[0m" 404 -
+2024-02-16 18:02:05 INFO 127.0.0.1 - - [16/Feb/2024 18:02:05] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:02:06 INFO 127.0.0.1 - - [16/Feb/2024 18:02:06] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 18:02:06 INFO 127.0.0.1 - - [16/Feb/2024 18:02:06] "[33mGET /static/icons/Internet_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:02:06 INFO 127.0.0.1 - - [16/Feb/2024 18:02:06] "[33mGET /static/icons/Carpeta_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:02:06 INFO 127.0.0.1 - - [16/Feb/2024 18:02:06] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:02:06 INFO 127.0.0.1 - - [16/Feb/2024 18:02:06] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:02:06 INFO 127.0.0.1 - - [16/Feb/2024 18:02:06] "[33mGET /static/icons/Editar2_2Regular.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:02:06 INFO 127.0.0.1 - - [16/Feb/2024 18:02:06] "[33mGET /static/imgs/spinner.gif HTTP/1.1[0m" 404 -
+2024-02-16 18:02:11 INFO 127.0.0.1 - - [16/Feb/2024 18:02:11] "GET / HTTP/1.1" 200 -
+2024-02-16 18:02:11 INFO 127.0.0.1 - - [16/Feb/2024 18:02:11] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-02-16 18:02:11 INFO 127.0.0.1 - - [16/Feb/2024 18:02:11] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:02:11 INFO 127.0.0.1 - - [16/Feb/2024 18:02:11] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:02:11 INFO 127.0.0.1 - - [16/Feb/2024 18:02:11] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:02:11 INFO 127.0.0.1 - - [16/Feb/2024 18:02:11] "[33mGET /static/icons/Carpeta_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:02:11 INFO 127.0.0.1 - - [16/Feb/2024 18:02:11] "[33mGET /static/icons/Internet_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:02:11 INFO 127.0.0.1 - - [16/Feb/2024 18:02:11] "[33mGET /static/icons/Editar2_2Regular.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:02:11 INFO 127.0.0.1 - - [16/Feb/2024 18:02:11] "[33mGET /static/imgs/labs_logo.png HTTP/1.1[0m" 404 -
+2024-02-16 18:02:11 INFO 127.0.0.1 - - [16/Feb/2024 18:02:11] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:02:11 INFO 127.0.0.1 - - [16/Feb/2024 18:02:11] "[33mGET /static/imgs/spinner.gif HTTP/1.1[0m" 404 -
+2024-02-16 18:02:11 INFO 127.0.0.1 - - [16/Feb/2024 18:02:11] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 18:02:15 INFO 127.0.0.1 - - [16/Feb/2024 18:02:15] "GET / HTTP/1.1" 200 -
+2024-02-16 18:02:15 INFO 127.0.0.1 - - [16/Feb/2024 18:02:15] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-02-16 18:02:15 INFO 127.0.0.1 - - [16/Feb/2024 18:02:15] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:02:16 INFO 127.0.0.1 - - [16/Feb/2024 18:02:16] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:02:16 INFO 127.0.0.1 - - [16/Feb/2024 18:02:16] "[33mGET /static/icons/Carpeta_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:02:16 INFO 127.0.0.1 - - [16/Feb/2024 18:02:16] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 18:02:16 INFO 127.0.0.1 - - [16/Feb/2024 18:02:16] "[33mGET /static/imgs/labs_logo.png HTTP/1.1[0m" 404 -
+2024-02-16 18:02:16 INFO 127.0.0.1 - - [16/Feb/2024 18:02:16] "[33mGET /static/icons/Editar2_2Regular.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:02:16 INFO 127.0.0.1 - - [16/Feb/2024 18:02:16] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:02:16 INFO 127.0.0.1 - - [16/Feb/2024 18:02:16] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:02:16 INFO 127.0.0.1 - - [16/Feb/2024 18:02:16] "[33mGET /static/imgs/spinner.gif HTTP/1.1[0m" 404 -
+2024-02-16 18:02:16 INFO 127.0.0.1 - - [16/Feb/2024 18:02:16] "[33mGET /static/icons/Internet_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:02:16 INFO 127.0.0.1 - - [16/Feb/2024 18:02:16] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 18:09:29 INFO 127.0.0.1 - - [16/Feb/2024 18:09:29] "GET / HTTP/1.1" 200 -
+2024-02-16 18:09:29 INFO 127.0.0.1 - - [16/Feb/2024 18:09:29] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-02-16 18:09:29 INFO 127.0.0.1 - - [16/Feb/2024 18:09:29] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:09:30 INFO 127.0.0.1 - - [16/Feb/2024 18:09:30] "[33mGET /static/icons/Editar2_2Regular.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:09:30 INFO 127.0.0.1 - - [16/Feb/2024 18:09:30] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:09:30 INFO 127.0.0.1 - - [16/Feb/2024 18:09:30] "[33mGET /static/icons/Internet_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:09:30 INFO 127.0.0.1 - - [16/Feb/2024 18:09:30] "[33mGET /static/imgs/labs_logo.png HTTP/1.1[0m" 404 -
+2024-02-16 18:09:30 INFO 127.0.0.1 - - [16/Feb/2024 18:09:30] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:09:30 INFO 127.0.0.1 - - [16/Feb/2024 18:09:30] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 18:09:30 INFO 127.0.0.1 - - [16/Feb/2024 18:09:30] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:09:30 INFO 127.0.0.1 - - [16/Feb/2024 18:09:30] "[33mGET /static/icons/Carpeta_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:09:30 INFO 127.0.0.1 - - [16/Feb/2024 18:09:30] "[33mGET /static/imgs/spinner.gif HTTP/1.1[0m" 404 -
+2024-02-16 18:10:00 INFO 127.0.0.1 - - [16/Feb/2024 18:10:00] "GET / HTTP/1.1" 200 -
+2024-02-16 18:10:00 INFO 127.0.0.1 - - [16/Feb/2024 18:10:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-02-16 18:10:00 INFO 127.0.0.1 - - [16/Feb/2024 18:10:00] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:10:00 INFO 127.0.0.1 - - [16/Feb/2024 18:10:00] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:10:00 INFO 127.0.0.1 - - [16/Feb/2024 18:10:00] "[33mGET /static/icons/Carpeta_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:10:00 INFO 127.0.0.1 - - [16/Feb/2024 18:10:00] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:10:01 INFO 127.0.0.1 - - [16/Feb/2024 18:10:01] "[33mGET /static/icons/Editar2_2Regular.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:10:01 INFO 127.0.0.1 - - [16/Feb/2024 18:10:01] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 18:10:01 INFO 127.0.0.1 - - [16/Feb/2024 18:10:01] "[33mGET /static/imgs/labs_logo.png HTTP/1.1[0m" 404 -
+2024-02-16 18:10:01 INFO 127.0.0.1 - - [16/Feb/2024 18:10:01] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:10:01 INFO 127.0.0.1 - - [16/Feb/2024 18:10:01] "[33mGET /static/imgs/spinner.gif HTTP/1.1[0m" 404 -
+2024-02-16 18:10:01 INFO 127.0.0.1 - - [16/Feb/2024 18:10:01] "[33mGET /static/icons/Internet_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:10:01 INFO 127.0.0.1 - - [16/Feb/2024 18:10:01] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 18:10:21 INFO 127.0.0.1 - - [16/Feb/2024 18:10:21] "GET / HTTP/1.1" 200 -
+2024-02-16 18:10:21 INFO 127.0.0.1 - - [16/Feb/2024 18:10:21] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-02-16 18:10:21 INFO 127.0.0.1 - - [16/Feb/2024 18:10:21] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:10:21 INFO 127.0.0.1 - - [16/Feb/2024 18:10:21] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:10:21 INFO 127.0.0.1 - - [16/Feb/2024 18:10:21] "[33mGET /static/imgs/labs_logo.png HTTP/1.1[0m" 404 -
+2024-02-16 18:10:21 INFO 127.0.0.1 - - [16/Feb/2024 18:10:21] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:10:21 INFO 127.0.0.1 - - [16/Feb/2024 18:10:21] "[33mGET /static/icons/Carpeta_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:10:21 INFO 127.0.0.1 - - [16/Feb/2024 18:10:21] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 18:10:21 INFO 127.0.0.1 - - [16/Feb/2024 18:10:21] "[33mGET /static/icons/Internet_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:10:21 INFO 127.0.0.1 - - [16/Feb/2024 18:10:21] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:10:21 INFO 127.0.0.1 - - [16/Feb/2024 18:10:21] "[33mGET /static/imgs/spinner.gif HTTP/1.1[0m" 404 -
+2024-02-16 18:10:21 INFO 127.0.0.1 - - [16/Feb/2024 18:10:21] "[33mGET /static/icons/Editar2_2Regular.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:10:21 INFO 127.0.0.1 - - [16/Feb/2024 18:10:21] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 18:10:24 INFO 127.0.0.1 - - [16/Feb/2024 18:10:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-02-16 18:10:53 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8001
+2024-02-16 18:10:53 INFO [33mPress CTRL+C to quit[0m
+2024-02-16 18:10:53 INFO  * Restarting with stat
+2024-02-16 18:10:54 WARNING  * Debugger is active!
+2024-02-16 18:10:54 INFO  * Debugger PIN: 950-301-821
+2024-02-16 18:10:55 INFO 127.0.0.1 - - [16/Feb/2024 18:10:55] "GET / HTTP/1.1" 200 -
+2024-02-16 18:10:55 INFO 127.0.0.1 - - [16/Feb/2024 18:10:55] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-02-16 18:10:56 INFO 127.0.0.1 - - [16/Feb/2024 18:10:56] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:10:56 INFO 127.0.0.1 - - [16/Feb/2024 18:10:56] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:10:56 INFO 127.0.0.1 - - [16/Feb/2024 18:10:56] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 18:10:56 INFO 127.0.0.1 - - [16/Feb/2024 18:10:56] "[33mGET /static/icons/Internet_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:10:56 INFO 127.0.0.1 - - [16/Feb/2024 18:10:56] "[33mGET /static/icons/Carpeta_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:10:56 INFO 127.0.0.1 - - [16/Feb/2024 18:10:56] "[33mGET /static/icons/Editar2_2Regular.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:10:56 INFO 127.0.0.1 - - [16/Feb/2024 18:10:56] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:10:56 INFO 127.0.0.1 - - [16/Feb/2024 18:10:56] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:10:56 INFO 127.0.0.1 - - [16/Feb/2024 18:10:56] "[33mGET /static/imgs/labs_logo.png HTTP/1.1[0m" 404 -
+2024-02-16 18:10:56 INFO 127.0.0.1 - - [16/Feb/2024 18:10:56] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 18:10:56 INFO 127.0.0.1 - - [16/Feb/2024 18:10:56] "[33mGET /static/imgs/spinner.gif HTTP/1.1[0m" 404 -
+2024-02-16 18:13:22 INFO 127.0.0.1 - - [16/Feb/2024 18:13:22] "GET / HTTP/1.1" 200 -
+2024-02-16 18:13:22 INFO 127.0.0.1 - - [16/Feb/2024 18:13:22] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-02-16 18:13:22 INFO 127.0.0.1 - - [16/Feb/2024 18:13:22] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:13:22 INFO 127.0.0.1 - - [16/Feb/2024 18:13:22] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 18:13:22 INFO 127.0.0.1 - - [16/Feb/2024 18:13:22] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:13:23 INFO 127.0.0.1 - - [16/Feb/2024 18:13:23] "[33mGET /static/icons/Internet_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:13:23 INFO 127.0.0.1 - - [16/Feb/2024 18:13:23] "[33mGET /static/icons/Carpeta_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:13:23 INFO 127.0.0.1 - - [16/Feb/2024 18:13:23] "[33mGET /static/icons/Editar2_2Regular.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:13:23 INFO 127.0.0.1 - - [16/Feb/2024 18:13:23] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:13:23 INFO 127.0.0.1 - - [16/Feb/2024 18:13:23] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:13:23 INFO 127.0.0.1 - - [16/Feb/2024 18:13:23] "[33mGET /static/imgs/spinner.gif HTTP/1.1[0m" 404 -
+2024-02-16 18:13:23 INFO 127.0.0.1 - - [16/Feb/2024 18:13:23] "[33mGET /static/imgs/labs_logo.png HTTP/1.1[0m" 404 -
+2024-02-16 18:13:44 INFO 127.0.0.1 - - [16/Feb/2024 18:13:44] "GET / HTTP/1.1" 200 -
+2024-02-16 18:13:44 INFO 127.0.0.1 - - [16/Feb/2024 18:13:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-02-16 18:13:44 INFO 127.0.0.1 - - [16/Feb/2024 18:13:44] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:13:44 INFO 127.0.0.1 - - [16/Feb/2024 18:13:44] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:13:44 INFO 127.0.0.1 - - [16/Feb/2024 18:13:44] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:13:44 INFO 127.0.0.1 - - [16/Feb/2024 18:13:44] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:13:45 INFO 127.0.0.1 - - [16/Feb/2024 18:13:45] "[33mGET /static/icons/Carpeta_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:13:45 INFO 127.0.0.1 - - [16/Feb/2024 18:13:45] "[33mGET /static/icons/Internet_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:13:45 INFO 127.0.0.1 - - [16/Feb/2024 18:13:45] "[33mGET /static/imgs/labs_logo.png HTTP/1.1[0m" 404 -
+2024-02-16 18:13:45 INFO 127.0.0.1 - - [16/Feb/2024 18:13:45] "[33mGET /static/icons/Editar2_2Regular.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:13:45 INFO 127.0.0.1 - - [16/Feb/2024 18:13:45] "[33mGET /static/imgs/spinner.gif HTTP/1.1[0m" 404 -
+2024-02-16 18:13:45 INFO 127.0.0.1 - - [16/Feb/2024 18:13:45] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 18:13:45 INFO 127.0.0.1 - - [16/Feb/2024 18:13:45] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 18:13:55 INFO 127.0.0.1 - - [16/Feb/2024 18:13:55] "GET / HTTP/1.1" 200 -
+2024-02-16 18:13:56 INFO 127.0.0.1 - - [16/Feb/2024 18:13:56] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-02-16 18:13:56 INFO 127.0.0.1 - - [16/Feb/2024 18:13:56] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:13:56 INFO 127.0.0.1 - - [16/Feb/2024 18:13:56] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:13:56 INFO 127.0.0.1 - - [16/Feb/2024 18:13:56] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 18:13:56 INFO 127.0.0.1 - - [16/Feb/2024 18:13:56] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:13:56 INFO 127.0.0.1 - - [16/Feb/2024 18:13:56] "[33mGET /static/icons/Carpeta_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:13:56 INFO 127.0.0.1 - - [16/Feb/2024 18:13:56] "[33mGET /static/icons/Internet_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:13:56 INFO 127.0.0.1 - - [16/Feb/2024 18:13:56] "[33mGET /static/icons/Editar2_2Regular.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:13:56 INFO 127.0.0.1 - - [16/Feb/2024 18:13:56] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:13:56 INFO 127.0.0.1 - - [16/Feb/2024 18:13:56] "[33mGET /static/imgs/spinner.gif HTTP/1.1[0m" 404 -
+2024-02-16 18:13:56 INFO 127.0.0.1 - - [16/Feb/2024 18:13:56] "[33mGET /static/imgs/labs_logo.png HTTP/1.1[0m" 404 -
+2024-02-16 18:14:29 INFO 127.0.0.1 - - [16/Feb/2024 18:14:29] "GET / HTTP/1.1" 200 -
+2024-02-16 18:14:29 INFO 127.0.0.1 - - [16/Feb/2024 18:14:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-02-16 18:14:29 INFO 127.0.0.1 - - [16/Feb/2024 18:14:29] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:14:29 INFO 127.0.0.1 - - [16/Feb/2024 18:14:29] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 18:14:29 INFO 127.0.0.1 - - [16/Feb/2024 18:14:29] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:14:29 INFO 127.0.0.1 - - [16/Feb/2024 18:14:29] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:14:29 INFO 127.0.0.1 - - [16/Feb/2024 18:14:29] "[33mGET /static/icons/Editar2_2Regular.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:14:29 INFO 127.0.0.1 - - [16/Feb/2024 18:14:29] "[33mGET /static/icons/Internet_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:14:29 INFO 127.0.0.1 - - [16/Feb/2024 18:14:29] "[33mGET /static/icons/Carpeta_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:14:30 INFO 127.0.0.1 - - [16/Feb/2024 18:14:30] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:14:30 INFO 127.0.0.1 - - [16/Feb/2024 18:14:30] "[33mGET /static/imgs/spinner.gif HTTP/1.1[0m" 404 -
+2024-02-16 18:14:30 INFO 127.0.0.1 - - [16/Feb/2024 18:14:30] "[33mGET /static/imgs/labs_logo.png HTTP/1.1[0m" 404 -
+2024-02-16 18:14:48 INFO 127.0.0.1 - - [16/Feb/2024 18:14:48] "GET / HTTP/1.1" 200 -
+2024-02-16 18:14:48 INFO 127.0.0.1 - - [16/Feb/2024 18:14:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-02-16 18:14:48 INFO 127.0.0.1 - - [16/Feb/2024 18:14:48] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:14:48 INFO 127.0.0.1 - - [16/Feb/2024 18:14:48] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:14:48 INFO 127.0.0.1 - - [16/Feb/2024 18:14:48] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:14:48 INFO 127.0.0.1 - - [16/Feb/2024 18:14:48] "[33mGET /static/icons/Internet_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:14:48 INFO 127.0.0.1 - - [16/Feb/2024 18:14:48] "[33mGET /static/icons/Editar2_2Regular.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:14:48 INFO 127.0.0.1 - - [16/Feb/2024 18:14:48] "[33mGET /static/icons/Carpeta_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:14:48 INFO 127.0.0.1 - - [16/Feb/2024 18:14:48] "[33mGET /static/imgs/labs_logo.png HTTP/1.1[0m" 404 -
+2024-02-16 18:14:48 INFO 127.0.0.1 - - [16/Feb/2024 18:14:48] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 18:14:48 INFO 127.0.0.1 - - [16/Feb/2024 18:14:48] "[33mGET /static/imgs/spinner.gif HTTP/1.1[0m" 404 -
+2024-02-16 18:15:25 INFO 127.0.0.1 - - [16/Feb/2024 18:15:25] "GET / HTTP/1.1" 200 -
+2024-02-16 18:15:25 INFO 127.0.0.1 - - [16/Feb/2024 18:15:25] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-02-16 18:15:26 INFO 127.0.0.1 - - [16/Feb/2024 18:15:26] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:15:26 INFO 127.0.0.1 - - [16/Feb/2024 18:15:26] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:15:26 INFO 127.0.0.1 - - [16/Feb/2024 18:15:26] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:15:26 INFO 127.0.0.1 - - [16/Feb/2024 18:15:26] "[33mGET /static/imgs/labs_logo.png HTTP/1.1[0m" 404 -
+2024-02-16 18:15:26 INFO 127.0.0.1 - - [16/Feb/2024 18:15:26] "[33mGET /static/icons/Editar2_2Regular.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:15:26 INFO 127.0.0.1 - - [16/Feb/2024 18:15:26] "[33mGET /static/icons/Carpeta_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:15:26 INFO 127.0.0.1 - - [16/Feb/2024 18:15:26] "[33mGET /static/icons/Internet_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:15:26 INFO 127.0.0.1 - - [16/Feb/2024 18:15:26] "[33mGET /static/imgs/spinner.gif HTTP/1.1[0m" 404 -
+2024-02-16 18:15:26 INFO 127.0.0.1 - - [16/Feb/2024 18:15:26] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 18:16:26 INFO 127.0.0.1 - - [16/Feb/2024 18:16:26] "GET / HTTP/1.1" 200 -
+2024-02-16 18:16:26 INFO 127.0.0.1 - - [16/Feb/2024 18:16:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-02-16 18:16:26 INFO 127.0.0.1 - - [16/Feb/2024 18:16:26] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:16:26 INFO 127.0.0.1 - - [16/Feb/2024 18:16:26] "[33mGET /static/js/char_count.js HTTP/1.1[0m" 404 -
+2024-02-16 18:16:26 INFO 127.0.0.1 - - [16/Feb/2024 18:16:26] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:16:27 INFO 127.0.0.1 - - [16/Feb/2024 18:16:27] "[33mGET /static/icons/Carpeta_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:16:27 INFO 127.0.0.1 - - [16/Feb/2024 18:16:27] "[33mGET /static/icons/Editar2_2Regular.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:16:27 INFO 127.0.0.1 - - [16/Feb/2024 18:16:27] "[33mGET /static/icons/Internet_3Masa.svg HTTP/1.1[0m" 404 -
+2024-02-16 18:16:27 INFO 127.0.0.1 - - [16/Feb/2024 18:16:27] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:16:27 INFO 127.0.0.1 - - [16/Feb/2024 18:16:27] "[33mGET /static/imgs/spinner.gif HTTP/1.1[0m" 404 -
+2024-02-16 18:16:27 INFO 127.0.0.1 - - [16/Feb/2024 18:16:27] "[33mGET /static/imgs/labs_logo.png HTTP/1.1[0m" 404 -
+2024-02-16 18:18:20 INFO 127.0.0.1 - - [16/Feb/2024 18:18:20] "GET / HTTP/1.1" 200 -
+2024-02-16 18:18:20 INFO 127.0.0.1 - - [16/Feb/2024 18:18:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-02-16 18:18:21 INFO 127.0.0.1 - - [16/Feb/2024 18:18:21] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:18:21 INFO 127.0.0.1 - - [16/Feb/2024 18:18:21] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:18:21 INFO 127.0.0.1 - - [16/Feb/2024 18:18:21] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:18:40 INFO 127.0.0.1 - - [16/Feb/2024 18:18:40] "GET / HTTP/1.1" 200 -
+2024-02-16 18:18:40 INFO 127.0.0.1 - - [16/Feb/2024 18:18:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-02-16 18:18:41 INFO 127.0.0.1 - - [16/Feb/2024 18:18:41] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:18:41 INFO 127.0.0.1 - - [16/Feb/2024 18:18:41] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:18:41 INFO 127.0.0.1 - - [16/Feb/2024 18:18:41] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:20:54 INFO 127.0.0.1 - - [16/Feb/2024 18:20:54] "GET / HTTP/1.1" 200 -
+2024-02-16 18:20:54 INFO 127.0.0.1 - - [16/Feb/2024 18:20:54] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-02-16 18:20:54 INFO 127.0.0.1 - - [16/Feb/2024 18:20:54] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:20:54 INFO 127.0.0.1 - - [16/Feb/2024 18:20:54] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:20:54 INFO 127.0.0.1 - - [16/Feb/2024 18:20:54] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:21:27 INFO 127.0.0.1 - - [16/Feb/2024 18:21:27] "GET / HTTP/1.1" 200 -
+2024-02-16 18:21:27 INFO 127.0.0.1 - - [16/Feb/2024 18:21:27] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-02-16 18:21:27 INFO 127.0.0.1 - - [16/Feb/2024 18:21:27] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:21:27 INFO 127.0.0.1 - - [16/Feb/2024 18:21:27] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:21:27 INFO 127.0.0.1 - - [16/Feb/2024 18:21:27] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:21:35 INFO 127.0.0.1 - - [16/Feb/2024 18:21:35] "GET / HTTP/1.1" 200 -
+2024-02-16 18:21:35 INFO 127.0.0.1 - - [16/Feb/2024 18:21:35] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-02-16 18:21:35 INFO 127.0.0.1 - - [16/Feb/2024 18:21:35] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:21:35 INFO 127.0.0.1 - - [16/Feb/2024 18:21:35] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:21:35 INFO 127.0.0.1 - - [16/Feb/2024 18:21:35] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:21:43 INFO 127.0.0.1 - - [16/Feb/2024 18:21:43] "GET / HTTP/1.1" 200 -
+2024-02-16 18:21:43 INFO 127.0.0.1 - - [16/Feb/2024 18:21:43] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-02-16 18:21:44 INFO 127.0.0.1 - - [16/Feb/2024 18:21:44] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:21:44 INFO 127.0.0.1 - - [16/Feb/2024 18:21:44] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:21:44 INFO 127.0.0.1 - - [16/Feb/2024 18:21:44] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:22:01 INFO 127.0.0.1 - - [16/Feb/2024 18:22:01] "GET / HTTP/1.1" 200 -
+2024-02-16 18:22:01 INFO 127.0.0.1 - - [16/Feb/2024 18:22:01] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-02-16 18:22:01 INFO 127.0.0.1 - - [16/Feb/2024 18:22:01] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:22:01 INFO 127.0.0.1 - - [16/Feb/2024 18:22:01] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:22:01 INFO 127.0.0.1 - - [16/Feb/2024 18:22:01] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:22:23 INFO 127.0.0.1 - - [16/Feb/2024 18:22:23] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-02-16 18:22:24 INFO 127.0.0.1 - - [16/Feb/2024 18:22:24] "[33mGET /fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:22:36 INFO 127.0.0.1 - - [16/Feb/2024 18:22:36] "GET / HTTP/1.1" 200 -
+2024-02-16 18:22:37 INFO 127.0.0.1 - - [16/Feb/2024 18:22:37] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-02-16 18:22:37 INFO 127.0.0.1 - - [16/Feb/2024 18:22:37] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:22:37 INFO 127.0.0.1 - - [16/Feb/2024 18:22:37] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:22:37 INFO 127.0.0.1 - - [16/Feb/2024 18:22:37] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:27:20 INFO 127.0.0.1 - - [16/Feb/2024 18:27:20] "GET / HTTP/1.1" 200 -
+2024-02-16 18:27:20 INFO 127.0.0.1 - - [16/Feb/2024 18:27:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-02-16 18:27:20 INFO 127.0.0.1 - - [16/Feb/2024 18:27:20] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:27:20 INFO 127.0.0.1 - - [16/Feb/2024 18:27:20] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:27:20 INFO 127.0.0.1 - - [16/Feb/2024 18:27:20] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:27:37 INFO 127.0.0.1 - - [16/Feb/2024 18:27:37] "GET / HTTP/1.1" 200 -
+2024-02-16 18:27:37 INFO 127.0.0.1 - - [16/Feb/2024 18:27:37] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-02-16 18:27:37 INFO 127.0.0.1 - - [16/Feb/2024 18:27:37] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:27:37 INFO 127.0.0.1 - - [16/Feb/2024 18:27:37] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:27:37 INFO 127.0.0.1 - - [16/Feb/2024 18:27:37] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:28:19 INFO 127.0.0.1 - - [16/Feb/2024 18:28:19] "GET / HTTP/1.1" 200 -
+2024-02-16 18:28:19 INFO 127.0.0.1 - - [16/Feb/2024 18:28:19] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-02-16 18:28:20 INFO 127.0.0.1 - - [16/Feb/2024 18:28:20] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:28:20 INFO 127.0.0.1 - - [16/Feb/2024 18:28:20] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:28:20 INFO 127.0.0.1 - - [16/Feb/2024 18:28:20] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:28:44 INFO 127.0.0.1 - - [16/Feb/2024 18:28:44] "GET / HTTP/1.1" 200 -
+2024-02-16 18:28:44 INFO 127.0.0.1 - - [16/Feb/2024 18:28:44] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-02-16 18:28:45 INFO 127.0.0.1 - - [16/Feb/2024 18:28:45] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:28:45 INFO 127.0.0.1 - - [16/Feb/2024 18:28:45] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:28:45 INFO 127.0.0.1 - - [16/Feb/2024 18:28:45] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:29:01 INFO 127.0.0.1 - - [16/Feb/2024 18:29:01] "GET / HTTP/1.1" 200 -
+2024-02-16 18:29:01 INFO 127.0.0.1 - - [16/Feb/2024 18:29:01] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-02-16 18:29:01 INFO 127.0.0.1 - - [16/Feb/2024 18:29:01] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:29:01 INFO 127.0.0.1 - - [16/Feb/2024 18:29:01] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:29:01 INFO 127.0.0.1 - - [16/Feb/2024 18:29:01] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:29:03 INFO 127.0.0.1 - - [16/Feb/2024 18:29:03] "GET / HTTP/1.1" 200 -
+2024-02-16 18:29:03 INFO 127.0.0.1 - - [16/Feb/2024 18:29:03] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-02-16 18:29:03 INFO 127.0.0.1 - - [16/Feb/2024 18:29:03] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:29:03 INFO 127.0.0.1 - - [16/Feb/2024 18:29:03] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:29:04 INFO 127.0.0.1 - - [16/Feb/2024 18:29:04] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-02-16 18:29:12 INFO 127.0.0.1 - - [16/Feb/2024 18:29:12] "GET / HTTP/1.1" 200 -
+2024-02-16 18:29:12 INFO 127.0.0.1 - - [16/Feb/2024 18:29:12] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-02-16 18:29:13 INFO 127.0.0.1 - - [16/Feb/2024 18:29:13] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-02-16 18:29:13 INFO 127.0.0.1 - - [16/Feb/2024 18:29:13] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-02-16 18:29:13 INFO 127.0.0.1 - - [16/Feb/2024 18:29:13] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-05 16:21:56 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8001
+2024-04-05 16:21:56 INFO [33mPress CTRL+C to quit[0m
+2024-04-05 16:21:56 INFO  * Restarting with stat
+2024-04-05 16:21:57 WARNING  * Debugger is active!
+2024-04-05 16:21:57 INFO  * Debugger PIN: 950-301-821
+2024-04-05 16:23:45 INFO 127.0.0.1 - - [05/Apr/2024 16:23:45] "GET / HTTP/1.1" 200 -
+2024-04-05 16:23:45 INFO 127.0.0.1 - - [05/Apr/2024 16:23:45] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-05 16:23:45 INFO 127.0.0.1 - - [05/Apr/2024 16:23:45] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-04-05 16:23:46 INFO 127.0.0.1 - - [05/Apr/2024 16:23:46] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-04-05 16:23:46 INFO 127.0.0.1 - - [05/Apr/2024 16:23:46] "[33mGET /static/js/multiselect-dropdown-main/multiselect-dropdown.js HTTP/1.1[0m" 404 -
+2024-04-05 16:23:46 INFO 127.0.0.1 - - [05/Apr/2024 16:23:46] "GET /static/imgs/dadom.png HTTP/1.1" 200 -
+2024-04-05 16:23:46 INFO 127.0.0.1 - - [05/Apr/2024 16:23:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-04-06 18:11:55 INFO 127.0.0.1 - - [06/Apr/2024 18:11:55] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-04-06 18:11:55 INFO 127.0.0.1 - - [06/Apr/2024 18:11:55] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-04-06 18:11:55 INFO 127.0.0.1 - - [06/Apr/2024 18:11:55] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-04-06 18:11:55 INFO 127.0.0.1 - - [06/Apr/2024 18:11:55] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-04-06 18:11:55 INFO 127.0.0.1 - - [06/Apr/2024 18:11:55] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-04-06 18:12:14 INFO 127.0.0.1 - - [06/Apr/2024 18:12:14] "GET / HTTP/1.1" 200 -
+2024-04-06 18:12:14 INFO 127.0.0.1 - - [06/Apr/2024 18:12:14] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 18:12:14 INFO 127.0.0.1 - - [06/Apr/2024 18:12:14] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-04-06 18:12:14 INFO 127.0.0.1 - - [06/Apr/2024 18:12:14] "GET /static/imgs/dadom.png HTTP/1.1" 200 -
+2024-04-06 18:12:15 INFO 127.0.0.1 - - [06/Apr/2024 18:12:15] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 18:16:43 INFO 127.0.0.1 - - [06/Apr/2024 18:16:43] "GET / HTTP/1.1" 200 -
+2024-04-06 18:16:43 INFO 127.0.0.1 - - [06/Apr/2024 18:16:43] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 18:16:43 INFO 127.0.0.1 - - [06/Apr/2024 18:16:43] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-04-06 18:16:44 INFO 127.0.0.1 - - [06/Apr/2024 18:16:44] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 18:16:44 INFO 127.0.0.1 - - [06/Apr/2024 18:16:44] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 18:19:05 INFO 127.0.0.1 - - [06/Apr/2024 18:19:05] "GET / HTTP/1.1" 200 -
+2024-04-06 18:19:05 INFO 127.0.0.1 - - [06/Apr/2024 18:19:05] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 18:19:05 INFO 127.0.0.1 - - [06/Apr/2024 18:19:05] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-04-06 18:19:05 INFO 127.0.0.1 - - [06/Apr/2024 18:19:05] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 18:19:06 INFO 127.0.0.1 - - [06/Apr/2024 18:19:06] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 18:21:29 INFO 127.0.0.1 - - [06/Apr/2024 18:21:29] "GET / HTTP/1.1" 200 -
+2024-04-06 18:21:29 INFO 127.0.0.1 - - [06/Apr/2024 18:21:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 18:21:29 INFO 127.0.0.1 - - [06/Apr/2024 18:21:29] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-04-06 18:21:29 INFO 127.0.0.1 - - [06/Apr/2024 18:21:29] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 18:21:29 INFO 127.0.0.1 - - [06/Apr/2024 18:21:29] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 18:21:57 INFO 127.0.0.1 - - [06/Apr/2024 18:21:57] "GET / HTTP/1.1" 200 -
+2024-04-06 18:21:57 INFO 127.0.0.1 - - [06/Apr/2024 18:21:57] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 18:21:58 INFO 127.0.0.1 - - [06/Apr/2024 18:21:58] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-04-06 18:21:58 INFO 127.0.0.1 - - [06/Apr/2024 18:21:58] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 18:21:58 INFO 127.0.0.1 - - [06/Apr/2024 18:21:58] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 18:23:01 INFO 127.0.0.1 - - [06/Apr/2024 18:23:01] "GET / HTTP/1.1" 200 -
+2024-04-06 18:23:01 INFO 127.0.0.1 - - [06/Apr/2024 18:23:01] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 18:23:01 INFO 127.0.0.1 - - [06/Apr/2024 18:23:01] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-04-06 18:23:01 INFO 127.0.0.1 - - [06/Apr/2024 18:23:01] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 18:23:01 INFO 127.0.0.1 - - [06/Apr/2024 18:23:01] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 18:23:42 INFO 127.0.0.1 - - [06/Apr/2024 18:23:42] "GET / HTTP/1.1" 200 -
+2024-04-06 18:23:42 INFO 127.0.0.1 - - [06/Apr/2024 18:23:42] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 18:23:43 INFO 127.0.0.1 - - [06/Apr/2024 18:23:43] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-04-06 18:23:43 INFO 127.0.0.1 - - [06/Apr/2024 18:23:43] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 18:23:43 INFO 127.0.0.1 - - [06/Apr/2024 18:23:43] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 18:23:51 INFO 127.0.0.1 - - [06/Apr/2024 18:23:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 18:24:32 INFO 127.0.0.1 - - [06/Apr/2024 18:24:32] "GET / HTTP/1.1" 200 -
+2024-04-06 18:24:32 INFO 127.0.0.1 - - [06/Apr/2024 18:24:32] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 18:24:32 INFO 127.0.0.1 - - [06/Apr/2024 18:24:32] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-04-06 18:24:32 INFO 127.0.0.1 - - [06/Apr/2024 18:24:32] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 18:24:32 INFO 127.0.0.1 - - [06/Apr/2024 18:24:32] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:11:30 INFO 127.0.0.1 - - [06/Apr/2024 22:11:30] "GET / HTTP/1.1" 200 -
+2024-04-06 22:11:30 INFO 127.0.0.1 - - [06/Apr/2024 22:11:30] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 22:11:30 INFO 127.0.0.1 - - [06/Apr/2024 22:11:30] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-04-06 22:11:31 INFO 127.0.0.1 - - [06/Apr/2024 22:11:31] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:11:31 INFO 127.0.0.1 - - [06/Apr/2024 22:11:31] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:11:46 INFO 127.0.0.1 - - [06/Apr/2024 22:11:46] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 22:12:02 INFO 127.0.0.1 - - [06/Apr/2024 22:12:02] "GET / HTTP/1.1" 200 -
+2024-04-06 22:12:02 INFO 127.0.0.1 - - [06/Apr/2024 22:12:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 22:12:02 INFO 127.0.0.1 - - [06/Apr/2024 22:12:02] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-04-06 22:12:03 INFO 127.0.0.1 - - [06/Apr/2024 22:12:03] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:12:03 INFO 127.0.0.1 - - [06/Apr/2024 22:12:03] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:12:26 INFO 127.0.0.1 - - [06/Apr/2024 22:12:26] "GET / HTTP/1.1" 200 -
+2024-04-06 22:12:26 INFO 127.0.0.1 - - [06/Apr/2024 22:12:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 22:12:26 INFO 127.0.0.1 - - [06/Apr/2024 22:12:26] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-04-06 22:12:26 INFO 127.0.0.1 - - [06/Apr/2024 22:12:26] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:12:26 INFO 127.0.0.1 - - [06/Apr/2024 22:12:26] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:13:14 INFO 127.0.0.1 - - [06/Apr/2024 22:13:14] "GET / HTTP/1.1" 200 -
+2024-04-06 22:13:14 INFO 127.0.0.1 - - [06/Apr/2024 22:13:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 22:13:14 INFO 127.0.0.1 - - [06/Apr/2024 22:13:14] "[33mGET /static/fonts/telefonica-sans-regular.ttf HTTP/1.1[0m" 404 -
+2024-04-06 22:13:15 INFO 127.0.0.1 - - [06/Apr/2024 22:13:15] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:13:15 INFO 127.0.0.1 - - [06/Apr/2024 22:13:15] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:21:33 INFO 127.0.0.1 - - [06/Apr/2024 22:21:33] "GET / HTTP/1.1" 200 -
+2024-04-06 22:21:34 INFO 127.0.0.1 - - [06/Apr/2024 22:21:34] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 22:21:34 INFO 127.0.0.1 - - [06/Apr/2024 22:21:34] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:21:34 INFO 127.0.0.1 - - [06/Apr/2024 22:21:34] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:22:52 INFO 127.0.0.1 - - [06/Apr/2024 22:22:52] "GET / HTTP/1.1" 200 -
+2024-04-06 22:22:52 INFO 127.0.0.1 - - [06/Apr/2024 22:22:52] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 22:22:52 INFO 127.0.0.1 - - [06/Apr/2024 22:22:52] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:22:52 INFO 127.0.0.1 - - [06/Apr/2024 22:22:52] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:26:12 INFO 127.0.0.1 - - [06/Apr/2024 22:26:12] "GET / HTTP/1.1" 200 -
+2024-04-06 22:26:12 INFO 127.0.0.1 - - [06/Apr/2024 22:26:12] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 22:26:12 INFO 127.0.0.1 - - [06/Apr/2024 22:26:12] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:26:12 INFO 127.0.0.1 - - [06/Apr/2024 22:26:12] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:26:37 INFO 127.0.0.1 - - [06/Apr/2024 22:26:37] "GET / HTTP/1.1" 200 -
+2024-04-06 22:26:37 INFO 127.0.0.1 - - [06/Apr/2024 22:26:37] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 22:26:37 INFO 127.0.0.1 - - [06/Apr/2024 22:26:37] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:26:37 INFO 127.0.0.1 - - [06/Apr/2024 22:26:37] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:27:36 INFO 127.0.0.1 - - [06/Apr/2024 22:27:36] "GET / HTTP/1.1" 200 -
+2024-04-06 22:27:36 INFO 127.0.0.1 - - [06/Apr/2024 22:27:36] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 22:27:37 INFO 127.0.0.1 - - [06/Apr/2024 22:27:37] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:27:37 INFO 127.0.0.1 - - [06/Apr/2024 22:27:37] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:30:37 INFO 127.0.0.1 - - [06/Apr/2024 22:30:37] "GET / HTTP/1.1" 200 -
+2024-04-06 22:30:37 INFO 127.0.0.1 - - [06/Apr/2024 22:30:37] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 22:30:37 INFO 127.0.0.1 - - [06/Apr/2024 22:30:37] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:30:37 INFO 127.0.0.1 - - [06/Apr/2024 22:30:37] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:32:43 INFO 127.0.0.1 - - [06/Apr/2024 22:32:43] "GET / HTTP/1.1" 200 -
+2024-04-06 22:32:43 INFO 127.0.0.1 - - [06/Apr/2024 22:32:43] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 22:32:43 INFO 127.0.0.1 - - [06/Apr/2024 22:32:43] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:32:43 INFO 127.0.0.1 - - [06/Apr/2024 22:32:43] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:38:57 INFO 127.0.0.1 - - [06/Apr/2024 22:38:57] "GET / HTTP/1.1" 200 -
+2024-04-06 22:38:57 INFO 127.0.0.1 - - [06/Apr/2024 22:38:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 22:38:57 INFO 127.0.0.1 - - [06/Apr/2024 22:38:57] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:38:57 INFO 127.0.0.1 - - [06/Apr/2024 22:38:57] "GET /static/imgs/intro.png HTTP/1.1" 200 -
+2024-04-06 22:38:58 INFO 127.0.0.1 - - [06/Apr/2024 22:38:58] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:40:30 INFO 127.0.0.1 - - [06/Apr/2024 22:40:30] "GET / HTTP/1.1" 200 -
+2024-04-06 22:40:30 INFO 127.0.0.1 - - [06/Apr/2024 22:40:30] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 22:40:31 INFO 127.0.0.1 - - [06/Apr/2024 22:40:31] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:40:31 INFO 127.0.0.1 - - [06/Apr/2024 22:40:31] "[36mGET /static/imgs/intro.png HTTP/1.1[0m" 304 -
+2024-04-06 22:40:31 INFO 127.0.0.1 - - [06/Apr/2024 22:40:31] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:40:49 INFO 127.0.0.1 - - [06/Apr/2024 22:40:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 22:41:51 INFO 127.0.0.1 - - [06/Apr/2024 22:41:51] "GET / HTTP/1.1" 200 -
+2024-04-06 22:41:51 INFO 127.0.0.1 - - [06/Apr/2024 22:41:51] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 22:41:51 INFO 127.0.0.1 - - [06/Apr/2024 22:41:51] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:41:52 INFO 127.0.0.1 - - [06/Apr/2024 22:41:52] "[36mGET /static/imgs/intro.png HTTP/1.1[0m" 304 -
+2024-04-06 22:41:52 INFO 127.0.0.1 - - [06/Apr/2024 22:41:52] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:42:14 INFO 127.0.0.1 - - [06/Apr/2024 22:42:14] "GET / HTTP/1.1" 200 -
+2024-04-06 22:42:14 INFO 127.0.0.1 - - [06/Apr/2024 22:42:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 22:42:14 INFO 127.0.0.1 - - [06/Apr/2024 22:42:14] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:42:15 INFO 127.0.0.1 - - [06/Apr/2024 22:42:15] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:42:44 INFO 127.0.0.1 - - [06/Apr/2024 22:42:44] "GET / HTTP/1.1" 200 -
+2024-04-06 22:42:44 INFO 127.0.0.1 - - [06/Apr/2024 22:42:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 22:42:44 INFO 127.0.0.1 - - [06/Apr/2024 22:42:44] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:42:45 INFO 127.0.0.1 - - [06/Apr/2024 22:42:45] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:45:12 INFO 127.0.0.1 - - [06/Apr/2024 22:45:12] "GET / HTTP/1.1" 200 -
+2024-04-06 22:45:12 INFO 127.0.0.1 - - [06/Apr/2024 22:45:12] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 22:45:12 INFO 127.0.0.1 - - [06/Apr/2024 22:45:12] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:45:12 INFO 127.0.0.1 - - [06/Apr/2024 22:45:12] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:45:51 INFO 127.0.0.1 - - [06/Apr/2024 22:45:51] "GET / HTTP/1.1" 200 -
+2024-04-06 22:45:51 INFO 127.0.0.1 - - [06/Apr/2024 22:45:51] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 22:45:51 INFO 127.0.0.1 - - [06/Apr/2024 22:45:51] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:45:52 INFO 127.0.0.1 - - [06/Apr/2024 22:45:52] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:46:15 INFO 127.0.0.1 - - [06/Apr/2024 22:46:15] "GET / HTTP/1.1" 200 -
+2024-04-06 22:46:15 INFO 127.0.0.1 - - [06/Apr/2024 22:46:15] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 22:46:15 INFO 127.0.0.1 - - [06/Apr/2024 22:46:15] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:46:15 INFO 127.0.0.1 - - [06/Apr/2024 22:46:15] "[36mGET /static/imgs/intro.png HTTP/1.1[0m" 304 -
+2024-04-06 22:46:15 INFO 127.0.0.1 - - [06/Apr/2024 22:46:15] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:46:25 INFO 127.0.0.1 - - [06/Apr/2024 22:46:25] "GET / HTTP/1.1" 200 -
+2024-04-06 22:46:25 INFO 127.0.0.1 - - [06/Apr/2024 22:46:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 22:46:25 INFO 127.0.0.1 - - [06/Apr/2024 22:46:25] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:46:26 INFO 127.0.0.1 - - [06/Apr/2024 22:46:26] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:47:39 INFO 127.0.0.1 - - [06/Apr/2024 22:47:39] "GET / HTTP/1.1" 200 -
+2024-04-06 22:47:40 INFO 127.0.0.1 - - [06/Apr/2024 22:47:40] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 22:47:40 INFO 127.0.0.1 - - [06/Apr/2024 22:47:40] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:47:40 INFO 127.0.0.1 - - [06/Apr/2024 22:47:40] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:48:09 INFO 127.0.0.1 - - [06/Apr/2024 22:48:09] "GET / HTTP/1.1" 200 -
+2024-04-06 22:48:09 INFO 127.0.0.1 - - [06/Apr/2024 22:48:09] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 22:48:09 INFO 127.0.0.1 - - [06/Apr/2024 22:48:09] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:48:09 INFO 127.0.0.1 - - [06/Apr/2024 22:48:09] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:48:17 INFO 127.0.0.1 - - [06/Apr/2024 22:48:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 22:49:02 INFO 127.0.0.1 - - [06/Apr/2024 22:49:02] "GET / HTTP/1.1" 200 -
+2024-04-06 22:49:02 INFO 127.0.0.1 - - [06/Apr/2024 22:49:02] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:49:02 INFO 127.0.0.1 - - [06/Apr/2024 22:49:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 22:49:34 INFO 127.0.0.1 - - [06/Apr/2024 22:49:34] "GET / HTTP/1.1" 200 -
+2024-04-06 22:49:34 INFO 127.0.0.1 - - [06/Apr/2024 22:49:34] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:49:35 INFO 127.0.0.1 - - [06/Apr/2024 22:49:35] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 22:49:59 INFO 127.0.0.1 - - [06/Apr/2024 22:49:59] "GET / HTTP/1.1" 200 -
+2024-04-06 22:49:59 INFO 127.0.0.1 - - [06/Apr/2024 22:49:59] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:50:00 INFO 127.0.0.1 - - [06/Apr/2024 22:50:00] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 22:50:37 INFO 127.0.0.1 - - [06/Apr/2024 22:50:37] "GET / HTTP/1.1" 200 -
+2024-04-06 22:50:37 INFO 127.0.0.1 - - [06/Apr/2024 22:50:37] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:50:37 INFO 127.0.0.1 - - [06/Apr/2024 22:50:37] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 22:52:11 INFO 127.0.0.1 - - [06/Apr/2024 22:52:11] "GET / HTTP/1.1" 200 -
+2024-04-06 22:52:11 INFO 127.0.0.1 - - [06/Apr/2024 22:52:11] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:52:12 INFO 127.0.0.1 - - [06/Apr/2024 22:52:12] "GET /static/imgs/logo-uc3m.png HTTP/1.1" 200 -
+2024-04-06 22:52:12 INFO 127.0.0.1 - - [06/Apr/2024 22:52:12] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 22:52:52 INFO 127.0.0.1 - - [06/Apr/2024 22:52:52] "GET / HTTP/1.1" 200 -
+2024-04-06 22:52:53 INFO 127.0.0.1 - - [06/Apr/2024 22:52:53] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:52:53 INFO 127.0.0.1 - - [06/Apr/2024 22:52:53] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 22:52:53 INFO 127.0.0.1 - - [06/Apr/2024 22:52:53] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 22:53:06 INFO 127.0.0.1 - - [06/Apr/2024 22:53:06] "GET / HTTP/1.1" 200 -
+2024-04-06 22:53:06 INFO 127.0.0.1 - - [06/Apr/2024 22:53:06] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 22:53:06 INFO 127.0.0.1 - - [06/Apr/2024 22:53:06] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 22:53:07 INFO 127.0.0.1 - - [06/Apr/2024 22:53:07] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 22:53:31 INFO 127.0.0.1 - - [06/Apr/2024 22:53:31] "GET / HTTP/1.1" 200 -
+2024-04-06 22:53:31 INFO 127.0.0.1 - - [06/Apr/2024 22:53:31] "GET /static/imgs/dadom.png HTTP/1.1" 200 -
+2024-04-06 22:53:32 INFO 127.0.0.1 - - [06/Apr/2024 22:53:32] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 22:53:32 INFO 127.0.0.1 - - [06/Apr/2024 22:53:32] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 23:13:21 INFO 127.0.0.1 - - [06/Apr/2024 23:13:21] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:13:21 INFO 127.0.0.1 - - [06/Apr/2024 23:13:21] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 23:13:21 INFO 127.0.0.1 - - [06/Apr/2024 23:13:21] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:13:21 INFO 127.0.0.1 - - [06/Apr/2024 23:13:21] "GET / HTTP/1.1" 200 -
+2024-04-06 23:13:21 INFO 127.0.0.1 - - [06/Apr/2024 23:13:21] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:13:21 INFO 127.0.0.1 - - [06/Apr/2024 23:13:21] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 23:13:21 INFO 127.0.0.1 - - [06/Apr/2024 23:13:21] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 23:13:24 INFO Predict endpoint ....
+2024-04-06 23:13:24 INFO Grabbing data from GET request ....
+2024-04-06 23:13:24 INFO Making request to the api ....
+2024-04-06 23:13:24 INFO 127.0.0.1 - - [06/Apr/2024 23:13:24] "[31m[1mGET /predict HTTP/1.1[0m" 400 -
+2024-04-06 23:14:22 INFO  * Detected change in 'C:\\Users\\jorge\\Desktop\\UNI\\4-CUARTO\\4-2-TFG\\CODE\\Gender-Bias\\WebApp\\web\\app.py', reloading
+2024-04-06 23:14:23 INFO  * Restarting with stat
+2024-04-06 23:14:23 WARNING  * Debugger is active!
+2024-04-06 23:14:23 INFO  * Debugger PIN: 950-301-821
+2024-04-06 23:14:24 INFO Predict endpoint ....
+2024-04-06 23:14:24 INFO 127.0.0.1 - - [06/Apr/2024 23:14:24] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:14:24 INFO 127.0.0.1 - - [06/Apr/2024 23:14:24] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:14:24 INFO 127.0.0.1 - - [06/Apr/2024 23:14:24] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 23:14:24 INFO 127.0.0.1 - - [06/Apr/2024 23:14:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 23:15:17 INFO Predict endpoint ....
+2024-04-06 23:15:17 INFO 127.0.0.1 - - [06/Apr/2024 23:15:17] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:15:17 INFO 127.0.0.1 - - [06/Apr/2024 23:15:17] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:15:17 INFO 127.0.0.1 - - [06/Apr/2024 23:15:17] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 23:15:17 INFO 127.0.0.1 - - [06/Apr/2024 23:15:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 23:17:09 INFO Predict endpoint ....
+2024-04-06 23:17:09 INFO 127.0.0.1 - - [06/Apr/2024 23:17:09] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:17:09 INFO 127.0.0.1 - - [06/Apr/2024 23:17:09] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:17:10 INFO 127.0.0.1 - - [06/Apr/2024 23:17:10] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 23:17:10 INFO 127.0.0.1 - - [06/Apr/2024 23:17:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 23:17:38 INFO Predict endpoint ....
+2024-04-06 23:17:38 INFO 127.0.0.1 - - [06/Apr/2024 23:17:38] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:17:38 INFO 127.0.0.1 - - [06/Apr/2024 23:17:38] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:17:39 INFO 127.0.0.1 - - [06/Apr/2024 23:17:39] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 23:17:39 INFO 127.0.0.1 - - [06/Apr/2024 23:17:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 23:19:33 INFO Predict endpoint ....
+2024-04-06 23:19:33 INFO 127.0.0.1 - - [06/Apr/2024 23:19:33] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:19:33 INFO 127.0.0.1 - - [06/Apr/2024 23:19:33] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:19:33 INFO 127.0.0.1 - - [06/Apr/2024 23:19:33] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 23:19:33 INFO 127.0.0.1 - - [06/Apr/2024 23:19:33] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:20:05 INFO Predict endpoint ....
+2024-04-06 23:20:05 INFO 127.0.0.1 - - [06/Apr/2024 23:20:05] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:20:05 INFO 127.0.0.1 - - [06/Apr/2024 23:20:05] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:20:05 INFO 127.0.0.1 - - [06/Apr/2024 23:20:05] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 23:20:05 INFO 127.0.0.1 - - [06/Apr/2024 23:20:05] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 23:22:46 INFO Predict endpoint ....
+2024-04-06 23:22:46 INFO 127.0.0.1 - - [06/Apr/2024 23:22:46] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:22:46 INFO 127.0.0.1 - - [06/Apr/2024 23:22:46] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:22:47 INFO 127.0.0.1 - - [06/Apr/2024 23:22:47] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 23:22:47 INFO 127.0.0.1 - - [06/Apr/2024 23:22:47] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:23:10 INFO Predict endpoint ....
+2024-04-06 23:23:10 INFO 127.0.0.1 - - [06/Apr/2024 23:23:10] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:23:10 INFO 127.0.0.1 - - [06/Apr/2024 23:23:10] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:23:11 INFO 127.0.0.1 - - [06/Apr/2024 23:23:11] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 23:23:11 INFO 127.0.0.1 - - [06/Apr/2024 23:23:11] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:23:42 INFO Predict endpoint ....
+2024-04-06 23:23:42 INFO 127.0.0.1 - - [06/Apr/2024 23:23:42] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:23:42 INFO 127.0.0.1 - - [06/Apr/2024 23:23:42] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:23:42 INFO 127.0.0.1 - - [06/Apr/2024 23:23:42] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 23:23:42 INFO 127.0.0.1 - - [06/Apr/2024 23:23:42] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:24:40 INFO Predict endpoint ....
+2024-04-06 23:24:40 INFO 127.0.0.1 - - [06/Apr/2024 23:24:40] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:24:40 INFO 127.0.0.1 - - [06/Apr/2024 23:24:40] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:24:40 INFO 127.0.0.1 - - [06/Apr/2024 23:24:40] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 23:24:40 INFO 127.0.0.1 - - [06/Apr/2024 23:24:40] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:24:59 INFO Predict endpoint ....
+2024-04-06 23:24:59 INFO 127.0.0.1 - - [06/Apr/2024 23:24:59] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:24:59 INFO 127.0.0.1 - - [06/Apr/2024 23:24:59] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:24:59 INFO 127.0.0.1 - - [06/Apr/2024 23:24:59] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 23:24:59 INFO 127.0.0.1 - - [06/Apr/2024 23:24:59] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:25:15 INFO Predict endpoint ....
+2024-04-06 23:25:15 INFO 127.0.0.1 - - [06/Apr/2024 23:25:15] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:25:15 INFO 127.0.0.1 - - [06/Apr/2024 23:25:15] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:25:15 INFO 127.0.0.1 - - [06/Apr/2024 23:25:15] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 23:25:15 INFO 127.0.0.1 - - [06/Apr/2024 23:25:15] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:25:34 INFO Predict endpoint ....
+2024-04-06 23:25:34 INFO 127.0.0.1 - - [06/Apr/2024 23:25:34] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:25:34 INFO 127.0.0.1 - - [06/Apr/2024 23:25:34] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:25:34 INFO 127.0.0.1 - - [06/Apr/2024 23:25:34] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 23:25:34 INFO 127.0.0.1 - - [06/Apr/2024 23:25:34] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:26:07 INFO Predict endpoint ....
+2024-04-06 23:26:07 INFO 127.0.0.1 - - [06/Apr/2024 23:26:07] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:26:07 INFO 127.0.0.1 - - [06/Apr/2024 23:26:07] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:26:07 INFO 127.0.0.1 - - [06/Apr/2024 23:26:07] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 23:26:07 INFO 127.0.0.1 - - [06/Apr/2024 23:26:07] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:34:17 INFO  * Detected change in 'C:\\Users\\jorge\\Desktop\\UNI\\4-CUARTO\\4-2-TFG\\CODE\\Gender-Bias\\WebApp\\web\\app.py', reloading
+2024-04-06 23:34:17 INFO  * Restarting with stat
+2024-04-06 23:34:17 WARNING  * Debugger is active!
+2024-04-06 23:34:17 INFO  * Debugger PIN: 950-301-821
+2024-04-06 23:34:40 INFO Predict endpoint ....
+2024-04-06 23:34:40 INFO 127.0.0.1 - - [06/Apr/2024 23:34:40] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:34:40 INFO 127.0.0.1 - - [06/Apr/2024 23:34:40] "[33mGET /globe-icon.png HTTP/1.1[0m" 404 -
+2024-04-06 23:35:59 INFO Predict endpoint ....
+2024-04-06 23:35:59 INFO 127.0.0.1 - - [06/Apr/2024 23:35:59] "[35m[1mGET /predict HTTP/1.1[0m" 500 -
+2024-04-06 23:35:59 INFO 127.0.0.1 - - [06/Apr/2024 23:35:59] "GET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-04-06 23:36:00 INFO 127.0.0.1 - - [06/Apr/2024 23:36:00] "GET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-04-06 23:36:00 INFO 127.0.0.1 - - [06/Apr/2024 23:36:00] "GET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-04-06 23:36:00 INFO 127.0.0.1 - - [06/Apr/2024 23:36:00] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-04-06 23:36:09 INFO Predict endpoint ....
+2024-04-06 23:36:09 INFO 127.0.0.1 - - [06/Apr/2024 23:36:09] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:36:09 INFO 127.0.0.1 - - [06/Apr/2024 23:36:09] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:36:10 INFO 127.0.0.1 - - [06/Apr/2024 23:36:10] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:36:10 INFO 127.0.0.1 - - [06/Apr/2024 23:36:10] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 23:36:10 INFO 127.0.0.1 - - [06/Apr/2024 23:36:10] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:36:52 INFO Predict endpoint ....
+2024-04-06 23:36:52 INFO 127.0.0.1 - - [06/Apr/2024 23:36:52] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:36:52 INFO 127.0.0.1 - - [06/Apr/2024 23:36:52] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:36:53 INFO 127.0.0.1 - - [06/Apr/2024 23:36:53] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:36:53 INFO 127.0.0.1 - - [06/Apr/2024 23:36:53] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 23:36:53 INFO 127.0.0.1 - - [06/Apr/2024 23:36:53] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:38:19 INFO Predict endpoint ....
+2024-04-06 23:38:19 INFO 127.0.0.1 - - [06/Apr/2024 23:38:19] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:38:19 INFO 127.0.0.1 - - [06/Apr/2024 23:38:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 23:38:20 INFO 127.0.0.1 - - [06/Apr/2024 23:38:20] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:38:20 INFO 127.0.0.1 - - [06/Apr/2024 23:38:20] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 23:38:20 INFO 127.0.0.1 - - [06/Apr/2024 23:38:20] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:38:21 INFO 127.0.0.1 - - [06/Apr/2024 23:38:21] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:38:25 INFO 127.0.0.1 - - [06/Apr/2024 23:38:25] "GET / HTTP/1.1" 200 -
+2024-04-06 23:38:25 INFO 127.0.0.1 - - [06/Apr/2024 23:38:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 23:38:26 INFO 127.0.0.1 - - [06/Apr/2024 23:38:26] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:38:26 INFO 127.0.0.1 - - [06/Apr/2024 23:38:26] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 23:39:37 INFO 127.0.0.1 - - [06/Apr/2024 23:39:37] "GET / HTTP/1.1" 200 -
+2024-04-06 23:39:37 INFO 127.0.0.1 - - [06/Apr/2024 23:39:37] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 23:39:37 INFO 127.0.0.1 - - [06/Apr/2024 23:39:37] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:39:38 INFO 127.0.0.1 - - [06/Apr/2024 23:39:38] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 23:39:38 INFO 127.0.0.1 - - [06/Apr/2024 23:39:38] "GET /static/imgs/dadom-fav.png HTTP/1.1" 200 -
+2024-04-06 23:40:04 INFO Predict endpoint ....
+2024-04-06 23:40:04 INFO 127.0.0.1 - - [06/Apr/2024 23:40:04] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:40:04 INFO 127.0.0.1 - - [06/Apr/2024 23:40:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 23:40:05 INFO 127.0.0.1 - - [06/Apr/2024 23:40:05] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:40:05 INFO 127.0.0.1 - - [06/Apr/2024 23:40:05] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 23:40:05 INFO 127.0.0.1 - - [06/Apr/2024 23:40:05] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-06 23:40:26 INFO Predict endpoint ....
+2024-04-06 23:40:26 INFO 127.0.0.1 - - [06/Apr/2024 23:40:26] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:40:26 INFO 127.0.0.1 - - [06/Apr/2024 23:40:26] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:40:26 INFO 127.0.0.1 - - [06/Apr/2024 23:40:26] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:40:26 INFO 127.0.0.1 - - [06/Apr/2024 23:40:26] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 23:40:26 INFO 127.0.0.1 - - [06/Apr/2024 23:40:26] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-06 23:40:56 INFO Predict endpoint ....
+2024-04-06 23:40:56 INFO 127.0.0.1 - - [06/Apr/2024 23:40:56] "[35m[1mGET /predict HTTP/1.1[0m" 500 -
+2024-04-06 23:40:56 INFO 127.0.0.1 - - [06/Apr/2024 23:40:56] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-04-06 23:40:56 INFO 127.0.0.1 - - [06/Apr/2024 23:40:56] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-04-06 23:40:57 INFO 127.0.0.1 - - [06/Apr/2024 23:40:57] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-04-06 23:40:57 INFO 127.0.0.1 - - [06/Apr/2024 23:40:57] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-04-06 23:41:03 INFO Predict endpoint ....
+2024-04-06 23:41:03 INFO 127.0.0.1 - - [06/Apr/2024 23:41:03] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:41:04 INFO 127.0.0.1 - - [06/Apr/2024 23:41:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 23:41:04 INFO 127.0.0.1 - - [06/Apr/2024 23:41:04] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-06 23:45:08 INFO Predict endpoint ....
+2024-04-06 23:45:08 INFO 127.0.0.1 - - [06/Apr/2024 23:45:08] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:45:08 INFO 127.0.0.1 - - [06/Apr/2024 23:45:08] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:45:08 INFO 127.0.0.1 - - [06/Apr/2024 23:45:08] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-06 23:45:16 INFO 127.0.0.1 - - [06/Apr/2024 23:45:16] "GET / HTTP/1.1" 200 -
+2024-04-06 23:45:16 INFO 127.0.0.1 - - [06/Apr/2024 23:45:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 23:45:17 INFO 127.0.0.1 - - [06/Apr/2024 23:45:17] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:45:17 INFO 127.0.0.1 - - [06/Apr/2024 23:45:17] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-06 23:45:19 INFO Predict endpoint ....
+2024-04-06 23:45:19 INFO 127.0.0.1 - - [06/Apr/2024 23:45:19] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:45:19 INFO 127.0.0.1 - - [06/Apr/2024 23:45:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 23:46:05 INFO Predict endpoint ....
+2024-04-06 23:46:05 INFO 127.0.0.1 - - [06/Apr/2024 23:46:05] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:46:05 INFO 127.0.0.1 - - [06/Apr/2024 23:46:05] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 23:46:05 INFO 127.0.0.1 - - [06/Apr/2024 23:46:05] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:46:05 INFO 127.0.0.1 - - [06/Apr/2024 23:46:05] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-06 23:46:24 INFO Predict endpoint ....
+2024-04-06 23:46:24 INFO 127.0.0.1 - - [06/Apr/2024 23:46:24] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:46:24 INFO 127.0.0.1 - - [06/Apr/2024 23:46:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 23:46:24 INFO 127.0.0.1 - - [06/Apr/2024 23:46:24] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:46:25 INFO 127.0.0.1 - - [06/Apr/2024 23:46:25] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-06 23:46:31 INFO Predict endpoint ....
+2024-04-06 23:46:31 INFO 127.0.0.1 - - [06/Apr/2024 23:46:31] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:46:32 INFO 127.0.0.1 - - [06/Apr/2024 23:46:32] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 23:46:32 INFO 127.0.0.1 - - [06/Apr/2024 23:46:32] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-06 23:46:32 INFO 127.0.0.1 - - [06/Apr/2024 23:46:32] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-06 23:46:57 INFO Predict endpoint ....
+2024-04-06 23:46:57 INFO 127.0.0.1 - - [06/Apr/2024 23:46:57] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:46:57 INFO 127.0.0.1 - - [06/Apr/2024 23:46:57] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:46:58 INFO 127.0.0.1 - - [06/Apr/2024 23:46:58] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-06 23:47:04 INFO Predict endpoint ....
+2024-04-06 23:47:04 INFO 127.0.0.1 - - [06/Apr/2024 23:47:04] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:47:05 INFO 127.0.0.1 - - [06/Apr/2024 23:47:05] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:47:05 INFO 127.0.0.1 - - [06/Apr/2024 23:47:05] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-06 23:47:15 INFO Predict endpoint ....
+2024-04-06 23:47:15 INFO 127.0.0.1 - - [06/Apr/2024 23:47:15] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:47:15 INFO 127.0.0.1 - - [06/Apr/2024 23:47:15] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:47:16 INFO 127.0.0.1 - - [06/Apr/2024 23:47:16] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-06 23:47:28 INFO 127.0.0.1 - - [06/Apr/2024 23:47:28] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 23:48:28 INFO Predict endpoint ....
+2024-04-06 23:48:28 INFO 127.0.0.1 - - [06/Apr/2024 23:48:28] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:48:28 INFO 127.0.0.1 - - [06/Apr/2024 23:48:28] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:48:28 INFO 127.0.0.1 - - [06/Apr/2024 23:48:28] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-06 23:48:45 INFO Predict endpoint ....
+2024-04-06 23:48:45 INFO 127.0.0.1 - - [06/Apr/2024 23:48:45] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:48:45 INFO 127.0.0.1 - - [06/Apr/2024 23:48:45] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:48:46 INFO 127.0.0.1 - - [06/Apr/2024 23:48:46] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-06 23:49:16 INFO Predict endpoint ....
+2024-04-06 23:49:16 INFO 127.0.0.1 - - [06/Apr/2024 23:49:16] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:49:16 INFO 127.0.0.1 - - [06/Apr/2024 23:49:16] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:49:16 INFO 127.0.0.1 - - [06/Apr/2024 23:49:16] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-06 23:49:24 INFO 127.0.0.1 - - [06/Apr/2024 23:49:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 23:54:53 INFO Predict endpoint ....
+2024-04-06 23:54:53 INFO 127.0.0.1 - - [06/Apr/2024 23:54:53] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:54:53 INFO 127.0.0.1 - - [06/Apr/2024 23:54:53] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:54:54 INFO 127.0.0.1 - - [06/Apr/2024 23:54:54] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-06 23:55:09 INFO Predict endpoint ....
+2024-04-06 23:55:09 INFO 127.0.0.1 - - [06/Apr/2024 23:55:09] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:55:10 INFO 127.0.0.1 - - [06/Apr/2024 23:55:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 23:55:10 INFO 127.0.0.1 - - [06/Apr/2024 23:55:10] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-06 23:55:31 INFO Predict endpoint ....
+2024-04-06 23:55:31 INFO 127.0.0.1 - - [06/Apr/2024 23:55:31] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:55:31 INFO 127.0.0.1 - - [06/Apr/2024 23:55:31] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:55:32 INFO 127.0.0.1 - - [06/Apr/2024 23:55:32] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-06 23:56:06 INFO Predict endpoint ....
+2024-04-06 23:56:06 INFO 127.0.0.1 - - [06/Apr/2024 23:56:06] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:56:06 INFO 127.0.0.1 - - [06/Apr/2024 23:56:06] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 23:56:07 INFO 127.0.0.1 - - [06/Apr/2024 23:56:07] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-06 23:56:21 INFO 127.0.0.1 - - [06/Apr/2024 23:56:21] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-06 23:56:40 INFO Predict endpoint ....
+2024-04-06 23:56:40 INFO 127.0.0.1 - - [06/Apr/2024 23:56:40] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:56:40 INFO 127.0.0.1 - - [06/Apr/2024 23:56:40] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:56:41 INFO 127.0.0.1 - - [06/Apr/2024 23:56:41] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-06 23:56:48 INFO Predict endpoint ....
+2024-04-06 23:56:48 INFO 127.0.0.1 - - [06/Apr/2024 23:56:48] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:56:48 INFO 127.0.0.1 - - [06/Apr/2024 23:56:48] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:56:48 INFO 127.0.0.1 - - [06/Apr/2024 23:56:48] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-06 23:57:09 INFO Predict endpoint ....
+2024-04-06 23:57:09 INFO 127.0.0.1 - - [06/Apr/2024 23:57:09] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:57:10 INFO 127.0.0.1 - - [06/Apr/2024 23:57:10] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:57:10 INFO 127.0.0.1 - - [06/Apr/2024 23:57:10] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-06 23:57:15 INFO Predict endpoint ....
+2024-04-06 23:57:15 INFO 127.0.0.1 - - [06/Apr/2024 23:57:15] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:57:16 INFO 127.0.0.1 - - [06/Apr/2024 23:57:16] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:57:16 INFO 127.0.0.1 - - [06/Apr/2024 23:57:16] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-06 23:57:59 INFO Predict endpoint ....
+2024-04-06 23:57:59 INFO 127.0.0.1 - - [06/Apr/2024 23:57:59] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:58:00 INFO 127.0.0.1 - - [06/Apr/2024 23:58:00] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:58:00 INFO 127.0.0.1 - - [06/Apr/2024 23:58:00] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-06 23:58:07 INFO Predict endpoint ....
+2024-04-06 23:58:07 INFO 127.0.0.1 - - [06/Apr/2024 23:58:07] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:58:08 INFO 127.0.0.1 - - [06/Apr/2024 23:58:08] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:58:08 INFO 127.0.0.1 - - [06/Apr/2024 23:58:08] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-06 23:59:54 INFO Predict endpoint ....
+2024-04-06 23:59:54 INFO 127.0.0.1 - - [06/Apr/2024 23:59:54] "GET /predict HTTP/1.1" 200 -
+2024-04-06 23:59:54 INFO 127.0.0.1 - - [06/Apr/2024 23:59:54] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-06 23:59:54 INFO 127.0.0.1 - - [06/Apr/2024 23:59:54] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-07 00:00:19 INFO Predict endpoint ....
+2024-04-07 00:00:19 INFO 127.0.0.1 - - [07/Apr/2024 00:00:19] "GET /predict HTTP/1.1" 200 -
+2024-04-07 00:00:19 INFO 127.0.0.1 - - [07/Apr/2024 00:00:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-07 00:00:19 INFO 127.0.0.1 - - [07/Apr/2024 00:00:19] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-07 00:05:50 INFO Predict endpoint ....
+2024-04-07 00:05:50 INFO 127.0.0.1 - - [07/Apr/2024 00:05:50] "GET /predict HTTP/1.1" 200 -
+2024-04-07 00:05:50 INFO 127.0.0.1 - - [07/Apr/2024 00:05:50] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-07 00:05:50 INFO 127.0.0.1 - - [07/Apr/2024 00:05:50] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-07 00:06:06 INFO Predict endpoint ....
+2024-04-07 00:06:06 INFO 127.0.0.1 - - [07/Apr/2024 00:06:06] "GET /predict HTTP/1.1" 200 -
+2024-04-07 00:06:06 INFO 127.0.0.1 - - [07/Apr/2024 00:06:06] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-07 00:06:06 INFO 127.0.0.1 - - [07/Apr/2024 00:06:06] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-07 00:10:54 INFO Predict endpoint ....
+2024-04-07 00:10:54 INFO 127.0.0.1 - - [07/Apr/2024 00:10:54] "GET /predict HTTP/1.1" 200 -
+2024-04-07 00:10:54 INFO 127.0.0.1 - - [07/Apr/2024 00:10:54] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-07 00:10:54 INFO 127.0.0.1 - - [07/Apr/2024 00:10:54] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-07 00:11:25 INFO Predict endpoint ....
+2024-04-07 00:11:25 INFO 127.0.0.1 - - [07/Apr/2024 00:11:25] "GET /predict HTTP/1.1" 200 -
+2024-04-07 00:11:26 INFO 127.0.0.1 - - [07/Apr/2024 00:11:26] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-07 00:11:26 INFO 127.0.0.1 - - [07/Apr/2024 00:11:26] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-07 00:11:49 INFO Predict endpoint ....
+2024-04-07 00:11:49 INFO 127.0.0.1 - - [07/Apr/2024 00:11:49] "GET /predict HTTP/1.1" 200 -
+2024-04-07 00:11:49 INFO 127.0.0.1 - - [07/Apr/2024 00:11:49] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-07 00:11:49 INFO 127.0.0.1 - - [07/Apr/2024 00:11:49] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-07 00:12:01 INFO Predict endpoint ....
+2024-04-07 00:12:01 INFO 127.0.0.1 - - [07/Apr/2024 00:12:01] "GET /predict HTTP/1.1" 200 -
+2024-04-07 00:12:01 INFO 127.0.0.1 - - [07/Apr/2024 00:12:01] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-07 00:12:01 INFO 127.0.0.1 - - [07/Apr/2024 00:12:01] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-07 00:12:53 INFO Predict endpoint ....
+2024-04-07 00:12:53 INFO 127.0.0.1 - - [07/Apr/2024 00:12:53] "GET /predict HTTP/1.1" 200 -
+2024-04-07 00:12:53 INFO 127.0.0.1 - - [07/Apr/2024 00:12:53] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-07 00:12:53 INFO 127.0.0.1 - - [07/Apr/2024 00:12:53] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-07 00:13:22 INFO Predict endpoint ....
+2024-04-07 00:13:22 INFO 127.0.0.1 - - [07/Apr/2024 00:13:22] "GET /predict HTTP/1.1" 200 -
+2024-04-07 00:13:23 INFO 127.0.0.1 - - [07/Apr/2024 00:13:23] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-07 00:13:23 INFO 127.0.0.1 - - [07/Apr/2024 00:13:23] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-07 00:13:31 INFO Predict endpoint ....
+2024-04-07 00:13:31 INFO 127.0.0.1 - - [07/Apr/2024 00:13:31] "GET /predict HTTP/1.1" 200 -
+2024-04-07 00:13:31 INFO 127.0.0.1 - - [07/Apr/2024 00:13:31] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-07 00:13:31 INFO 127.0.0.1 - - [07/Apr/2024 00:13:31] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-07 00:13:57 INFO Predict endpoint ....
+2024-04-07 00:13:57 INFO 127.0.0.1 - - [07/Apr/2024 00:13:57] "GET /predict HTTP/1.1" 200 -
+2024-04-07 00:13:57 INFO 127.0.0.1 - - [07/Apr/2024 00:13:57] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-04-07 00:13:57 INFO 127.0.0.1 - - [07/Apr/2024 00:13:57] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-09 13:11:24 INFO 127.0.0.1 - - [09/Apr/2024 13:11:24] "GET / HTTP/1.1" 200 -
+2024-04-09 13:11:24 INFO 127.0.0.1 - - [09/Apr/2024 13:11:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-09 13:11:24 INFO 127.0.0.1 - - [09/Apr/2024 13:11:24] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-09 13:11:24 INFO 127.0.0.1 - - [09/Apr/2024 13:11:24] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-09 13:12:09 INFO  * Detected change in 'C:\\Users\\jorge\\Desktop\\UNI\\4-CUARTO\\4-2-TFG\\CODE\\Gender-Bias\\WebApp\\web\\app.py', reloading
+2024-04-09 13:12:09 INFO  * Restarting with stat
+2024-04-09 13:12:10 WARNING  * Debugger is active!
+2024-04-09 13:12:10 INFO  * Debugger PIN: 950-301-821
+2024-04-09 13:13:37 INFO  * Detected change in 'C:\\Users\\jorge\\Desktop\\UNI\\4-CUARTO\\4-2-TFG\\CODE\\Gender-Bias\\WebApp\\web\\app.py', reloading
+2024-04-09 13:13:37 INFO  * Restarting with stat
+2024-04-09 13:13:37 WARNING  * Debugger is active!
+2024-04-09 13:13:37 INFO  * Debugger PIN: 950-301-821
+2024-04-09 13:13:38 INFO  * Detected change in 'C:\\Users\\jorge\\Desktop\\UNI\\4-CUARTO\\4-2-TFG\\CODE\\Gender-Bias\\WebApp\\web\\app.py', reloading
+2024-04-09 13:13:38 INFO  * Restarting with stat
+2024-04-09 13:13:39 WARNING  * Debugger is active!
+2024-04-09 13:13:39 INFO  * Debugger PIN: 950-301-821
+2024-04-09 13:14:00 INFO  * Detected change in 'C:\\Users\\jorge\\Desktop\\UNI\\4-CUARTO\\4-2-TFG\\CODE\\Gender-Bias\\WebApp\\web\\app.py', reloading
+2024-04-09 13:14:00 INFO  * Restarting with stat
+2024-04-09 13:14:01 WARNING  * Debugger is active!
+2024-04-09 13:14:01 INFO  * Debugger PIN: 950-301-821
+2024-04-09 13:14:07 INFO  * Detected change in 'C:\\Users\\jorge\\Desktop\\UNI\\4-CUARTO\\4-2-TFG\\CODE\\Gender-Bias\\WebApp\\web\\app.py', reloading
+2024-04-09 13:14:07 INFO  * Restarting with stat
+2024-04-09 13:14:07 WARNING  * Debugger is active!
+2024-04-09 13:14:07 INFO  * Debugger PIN: 950-301-821
+2024-04-09 13:14:18 INFO 127.0.0.1 - - [09/Apr/2024 13:14:18] "GET / HTTP/1.1" 200 -
+2024-04-09 13:14:19 INFO 127.0.0.1 - - [09/Apr/2024 13:14:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-09 13:14:19 INFO 127.0.0.1 - - [09/Apr/2024 13:14:19] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-09 13:14:19 INFO 127.0.0.1 - - [09/Apr/2024 13:14:19] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-09 13:14:19 INFO 127.0.0.1 - - [09/Apr/2024 13:14:19] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-09 13:14:21 INFO 127.0.0.1 - - [09/Apr/2024 13:14:21] "GET / HTTP/1.1" 200 -
+2024-04-09 13:14:22 INFO 127.0.0.1 - - [09/Apr/2024 13:14:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-09 13:14:22 INFO 127.0.0.1 - - [09/Apr/2024 13:14:22] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-09 13:14:22 INFO 127.0.0.1 - - [09/Apr/2024 13:14:22] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-09 13:14:22 INFO 127.0.0.1 - - [09/Apr/2024 13:14:22] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-09 13:14:37 INFO  * Detected change in 'C:\\Users\\jorge\\Desktop\\UNI\\4-CUARTO\\4-2-TFG\\CODE\\Gender-Bias\\WebApp\\web\\app.py', reloading
+2024-04-09 13:14:37 INFO  * Restarting with stat
+2024-04-09 13:14:38 WARNING  * Debugger is active!
+2024-04-09 13:14:38 INFO  * Debugger PIN: 950-301-821
+2024-04-09 13:15:18 INFO 127.0.0.1 - - [09/Apr/2024 13:15:18] "GET / HTTP/1.1" 200 -
+2024-04-09 13:15:18 INFO 127.0.0.1 - - [09/Apr/2024 13:15:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-09 13:15:18 INFO 127.0.0.1 - - [09/Apr/2024 13:15:18] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-09 13:17:10 INFO 127.0.0.1 - - [09/Apr/2024 13:17:10] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-04-09 13:17:10 INFO 127.0.0.1 - - [09/Apr/2024 13:17:10] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-04-09 13:17:10 INFO 127.0.0.1 - - [09/Apr/2024 13:17:10] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-04-09 13:17:11 INFO 127.0.0.1 - - [09/Apr/2024 13:17:11] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-04-09 13:17:11 INFO 127.0.0.1 - - [09/Apr/2024 13:17:11] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-04-09 13:17:11 INFO 127.0.0.1 - - [09/Apr/2024 13:17:11] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-04-09 13:17:20 INFO 127.0.0.1 - - [09/Apr/2024 13:17:20] "GET / HTTP/1.1" 200 -
+2024-04-09 13:17:20 INFO 127.0.0.1 - - [09/Apr/2024 13:17:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-09 13:17:20 INFO 127.0.0.1 - - [09/Apr/2024 13:17:20] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-09 13:17:20 INFO 127.0.0.1 - - [09/Apr/2024 13:17:20] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-09 13:17:21 INFO 127.0.0.1 - - [09/Apr/2024 13:17:21] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-09 13:20:11 INFO 127.0.0.1 - - [09/Apr/2024 13:20:11] "GET / HTTP/1.1" 200 -
+2024-04-09 13:20:11 INFO 127.0.0.1 - - [09/Apr/2024 13:20:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-09 13:20:11 INFO 127.0.0.1 - - [09/Apr/2024 13:20:11] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-09 13:20:12 INFO 127.0.0.1 - - [09/Apr/2024 13:20:12] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-09 13:20:12 INFO 127.0.0.1 - - [09/Apr/2024 13:20:12] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-09 13:21:03 INFO  * Detected change in 'C:\\Users\\jorge\\Desktop\\UNI\\4-CUARTO\\4-2-TFG\\CODE\\Gender-Bias\\WebApp\\web\\app.py', reloading
+2024-04-09 13:21:03 INFO  * Restarting with stat
+2024-04-09 13:21:04 WARNING  * Debugger is active!
+2024-04-09 13:21:04 INFO  * Debugger PIN: 950-301-821
+2024-04-09 13:21:11 INFO  * Detected change in 'C:\\Users\\jorge\\Desktop\\UNI\\4-CUARTO\\4-2-TFG\\CODE\\Gender-Bias\\WebApp\\web\\app.py', reloading
+2024-04-09 13:21:11 INFO  * Restarting with stat
+2024-04-09 13:21:12 WARNING  * Debugger is active!
+2024-04-09 13:21:12 INFO  * Debugger PIN: 950-301-821
+2024-04-09 13:21:38 INFO  * Detected change in 'C:\\Users\\jorge\\Desktop\\UNI\\4-CUARTO\\4-2-TFG\\CODE\\Gender-Bias\\WebApp\\web\\app.py', reloading
+2024-04-09 13:21:38 INFO  * Restarting with stat
+2024-04-09 13:21:38 WARNING  * Debugger is active!
+2024-04-09 13:21:38 INFO  * Debugger PIN: 950-301-821
+2024-04-09 13:23:33 INFO  * Detected change in 'C:\\Users\\jorge\\Desktop\\UNI\\4-CUARTO\\4-2-TFG\\CODE\\Gender-Bias\\WebApp\\web\\app.py', reloading
+2024-04-09 13:23:33 INFO  * Restarting with stat
+2024-04-09 13:23:33 WARNING  * Debugger is active!
+2024-04-09 13:23:33 INFO  * Debugger PIN: 950-301-821
+2024-04-09 13:23:39 INFO 127.0.0.1 - - [09/Apr/2024 13:23:39] "GET /?chatInput=hola HTTP/1.1" 200 -
+2024-04-09 13:23:39 INFO 127.0.0.1 - - [09/Apr/2024 13:23:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-09 13:23:40 INFO 127.0.0.1 - - [09/Apr/2024 13:23:40] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-09 13:23:40 INFO 127.0.0.1 - - [09/Apr/2024 13:23:40] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-09 13:23:44 INFO 127.0.0.1 - - [09/Apr/2024 13:23:44] "POST /process_text HTTP/1.1" 200 -
+2024-04-09 13:23:50 INFO 127.0.0.1 - - [09/Apr/2024 13:23:50] "GET /?chatInput=hola HTTP/1.1" 200 -
+2024-04-09 13:23:50 INFO 127.0.0.1 - - [09/Apr/2024 13:23:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-09 13:23:50 INFO 127.0.0.1 - - [09/Apr/2024 13:23:50] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-09 13:23:50 INFO 127.0.0.1 - - [09/Apr/2024 13:23:50] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-09 13:24:13 INFO  * Detected change in 'C:\\Users\\jorge\\Desktop\\UNI\\4-CUARTO\\4-2-TFG\\CODE\\Gender-Bias\\WebApp\\web\\app.py', reloading
+2024-04-09 13:24:13 INFO  * Restarting with stat
+2024-04-09 13:24:13 WARNING  * Debugger is active!
+2024-04-09 13:24:13 INFO  * Debugger PIN: 950-301-821
+2024-04-09 13:24:26 INFO  * Detected change in 'C:\\Users\\jorge\\Desktop\\UNI\\4-CUARTO\\4-2-TFG\\CODE\\Gender-Bias\\WebApp\\web\\app.py', reloading
+2024-04-09 13:24:26 INFO  * Restarting with stat
+2024-04-09 13:24:27 WARNING  * Debugger is active!
+2024-04-09 13:24:27 INFO  * Debugger PIN: 950-301-821
+2024-04-09 13:24:30 INFO  * Detected change in 'C:\\Users\\jorge\\Desktop\\UNI\\4-CUARTO\\4-2-TFG\\CODE\\Gender-Bias\\WebApp\\web\\app.py', reloading
+2024-04-09 13:24:30 INFO  * Restarting with stat
+2024-04-09 13:24:30 WARNING  * Debugger is active!
+2024-04-09 13:24:30 INFO  * Debugger PIN: 950-301-821
+2024-04-09 13:24:51 INFO  * Detected change in 'C:\\Users\\jorge\\Desktop\\UNI\\4-CUARTO\\4-2-TFG\\CODE\\Gender-Bias\\WebApp\\web\\app.py', reloading
+2024-04-09 13:24:51 INFO  * Restarting with stat
+2024-04-09 13:24:52 WARNING  * Debugger is active!
+2024-04-09 13:24:52 INFO  * Debugger PIN: 950-301-821
+2024-04-09 13:24:59 INFO  * Detected change in 'C:\\Users\\jorge\\Desktop\\UNI\\4-CUARTO\\4-2-TFG\\CODE\\Gender-Bias\\WebApp\\web\\app.py', reloading
+2024-04-09 13:24:59 INFO  * Restarting with stat
+2024-04-09 13:24:59 WARNING  * Debugger is active!
+2024-04-09 13:24:59 INFO  * Debugger PIN: 950-301-821
+2024-04-09 13:25:00 INFO  * Detected change in 'C:\\Users\\jorge\\Desktop\\UNI\\4-CUARTO\\4-2-TFG\\CODE\\Gender-Bias\\WebApp\\web\\app.py', reloading
+2024-04-09 13:25:00 INFO  * Restarting with stat
+2024-04-09 13:25:01 WARNING  * Debugger is active!
+2024-04-09 13:25:01 INFO  * Debugger PIN: 950-301-821
+2024-04-09 13:25:40 INFO 127.0.0.1 - - [09/Apr/2024 13:25:40] "GET / HTTP/1.1" 200 -
+2024-04-09 13:25:40 INFO 127.0.0.1 - - [09/Apr/2024 13:25:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-09 13:25:40 INFO 127.0.0.1 - - [09/Apr/2024 13:25:40] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-09 13:25:40 INFO 127.0.0.1 - - [09/Apr/2024 13:25:40] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-09 13:26:35 INFO  * Detected change in 'C:\\Users\\jorge\\Desktop\\UNI\\4-CUARTO\\4-2-TFG\\CODE\\Gender-Bias\\WebApp\\web\\app.py', reloading
+2024-04-09 13:26:35 INFO  * Restarting with stat
+2024-04-09 13:26:35 WARNING  * Debugger is active!
+2024-04-09 13:26:35 INFO  * Debugger PIN: 950-301-821
+2024-04-09 13:26:37 INFO 127.0.0.1 - - [09/Apr/2024 13:26:37] "GET /?chatInput=hola HTTP/1.1" 200 -
+2024-04-09 13:26:38 INFO 127.0.0.1 - - [09/Apr/2024 13:26:38] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-09 13:26:38 INFO 127.0.0.1 - - [09/Apr/2024 13:26:38] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-09 13:26:38 INFO 127.0.0.1 - - [09/Apr/2024 13:26:38] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-09 13:26:38 INFO 127.0.0.1 - - [09/Apr/2024 13:26:38] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-09 13:26:40 INFO 127.0.0.1 - - [09/Apr/2024 13:26:40] "GET / HTTP/1.1" 200 -
+2024-04-09 13:26:41 INFO 127.0.0.1 - - [09/Apr/2024 13:26:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-09 13:26:41 INFO 127.0.0.1 - - [09/Apr/2024 13:26:41] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-09 13:26:41 INFO 127.0.0.1 - - [09/Apr/2024 13:26:41] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-09 13:26:43 INFO 127.0.0.1 - - [09/Apr/2024 13:26:43] "POST /predict HTTP/1.1" 200 -
+2024-04-09 13:27:11 INFO  * Detected change in 'C:\\Users\\jorge\\Desktop\\UNI\\4-CUARTO\\4-2-TFG\\CODE\\Gender-Bias\\WebApp\\web\\app.py', reloading
+2024-04-09 13:27:11 INFO  * Restarting with stat
+2024-04-09 13:30:09 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:8001
+2024-04-09 13:30:09 INFO [33mPress CTRL+C to quit[0m
+2024-04-09 13:30:09 INFO  * Restarting with stat
+2024-04-09 13:30:09 WARNING  * Debugger is active!
+2024-04-09 13:30:09 INFO  * Debugger PIN: 950-301-821
+2024-04-09 13:30:11 INFO 127.0.0.1 - - [09/Apr/2024 13:30:11] "GET / HTTP/1.1" 200 -
+2024-04-09 13:30:11 INFO 127.0.0.1 - - [09/Apr/2024 13:30:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-09 13:30:11 INFO 127.0.0.1 - - [09/Apr/2024 13:30:11] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-09 13:30:11 INFO 127.0.0.1 - - [09/Apr/2024 13:30:11] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-09 13:30:12 INFO 127.0.0.1 - - [09/Apr/2024 13:30:12] "[36mGET /static/imgs/dadom-fav.png HTTP/1.1[0m" 304 -
+2024-04-09 13:40:41 INFO 127.0.0.1 - - [09/Apr/2024 13:40:41] "GET /home HTTP/1.1" 200 -
+2024-04-09 13:40:41 INFO 127.0.0.1 - - [09/Apr/2024 13:40:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-09 13:40:41 INFO 127.0.0.1 - - [09/Apr/2024 13:40:41] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-09 13:40:41 INFO 127.0.0.1 - - [09/Apr/2024 13:40:41] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-09 13:40:42 INFO 127.0.0.1 - - [09/Apr/2024 13:40:42] "GET /home/info HTTP/1.1" 200 -
+2024-04-09 13:40:43 INFO 127.0.0.1 - - [09/Apr/2024 13:40:43] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-09 13:40:43 INFO 127.0.0.1 - - [09/Apr/2024 13:40:43] "[33mGET /home/static/imgs/dadom.png HTTP/1.1[0m" 404 -
+2024-04-09 13:40:43 INFO 127.0.0.1 - - [09/Apr/2024 13:40:43] "[33mGET /home/static/imgs/logo-uc3m.png HTTP/1.1[0m" 404 -
+2024-04-09 13:40:43 INFO 127.0.0.1 - - [09/Apr/2024 13:40:43] "[33mGET /home/static/imgs/dadom-fav.png HTTP/1.1[0m" 404 -
+2024-04-09 13:40:45 INFO 127.0.0.1 - - [09/Apr/2024 13:40:45] "GET /home/predict HTTP/1.1" 200 -
+2024-04-09 13:40:46 INFO 127.0.0.1 - - [09/Apr/2024 13:40:46] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-09 13:40:46 INFO 127.0.0.1 - - [09/Apr/2024 13:40:46] "[33mGET /home/static/imgs/dadom.png HTTP/1.1[0m" 404 -
+2024-04-09 13:40:46 INFO 127.0.0.1 - - [09/Apr/2024 13:40:46] "[33mGET /home/static/imgs/logo-uc3m.png HTTP/1.1[0m" 404 -
+2024-04-09 13:40:47 INFO 127.0.0.1 - - [09/Apr/2024 13:40:47] "GET /home HTTP/1.1" 200 -
+2024-04-09 13:40:47 INFO 127.0.0.1 - - [09/Apr/2024 13:40:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-04-09 13:40:48 INFO 127.0.0.1 - - [09/Apr/2024 13:40:48] "[36mGET /static/imgs/dadom.png HTTP/1.1[0m" 304 -
+2024-04-09 13:40:48 INFO 127.0.0.1 - - [09/Apr/2024 13:40:48] "[36mGET /static/imgs/logo-uc3m.png HTTP/1.1[0m" 304 -
+2024-04-09 17:07:35 INFO  * Detected change in 'C:\\Users\\jorge\\Desktop\\UNI\\4-CUARTO\\4-2-TFG\\CODE\\Gender-Bias\\WebApp\\web\\app.py', reloading
+2024-04-09 17:07:35 INFO  * Restarting with stat
+2024-04-09 17:07:37 WARNING  * Debugger is active!
+2024-04-09 17:07:37 INFO  * Debugger PIN: 950-301-821

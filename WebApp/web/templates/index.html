@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DADOM </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="static/imgs/dadom-fav.png">
+</head>
+
+<body class="simple-body">
+
+{% include 'nav.html' %}
+
+<div class="chat-widget">
+    <form action="/predict" method="post" class="textarea-container">
+        <textarea name="chatInput" class="textarea-input" placeholder="Enter your text here..."></textarea>
+        <button type="submit" class="send-button">
+            <i class="fas fa-paper-plane"></i> Send
+        </button>
+    </form>
+</div>
+
+
+</body>
+</html>

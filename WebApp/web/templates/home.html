@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    {{ super() }}
+    <script src="static/js/multiselect-dropdown-main/multiselect-dropdown.js" ></script>
+{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="intro-image">
+          <img src="static/imgs/dadom.png" alt="Empowered Women" /> <!-- Update src with the path to your image -->
+        </div>
+        <div class="intro-text">
+          <h1>Welcome to DADOM</h1>
+          <p class="lead">Your dedicated platform for Automatic Detection of Hate Speech Against Women.</p>
+          <p>At DADOM, we are committed to creating a safe digital environment for everyone. Our cutting-edge technology is designed to identify and address online hate speech, fostering respect and equality across the web. Join us in our effort to make the internet a safer space for women and all individuals.</p>
+          <p>Explore our resources, learn more about our mission, and find out how you can get involved.</p>
+          <a href="#learn-more" class="btn-learn-more">Learn More</a>
+        </div>
+    </div>
+
+
+{% endblock %}
+

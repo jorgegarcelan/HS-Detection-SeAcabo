@@ -1,5 +1,5 @@
 # ==============================================
-# VERSION 1 POR JORGE GARCELÁN GÓMEZ - 12/12/23
+# VERSION 1 POR JORGE GARCELÁN GÓMEZ - 19/03/24
 # ==============================================
 
 # Importación de librerías
@@ -7,7 +7,8 @@
 import uuid
 
 from sklearn.model_selection import train_test_split
-
+import json
+import collections
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -42,6 +43,8 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
 import itertools
 import re
+import torch
+from transformers import BertTokenizer, DistilBertTokenizer, BertModel, BertForSequenceClassification, AdamW, get_linear_schedule_with_warmup, RobertaTokenizer, RobertaModel
 from nltk.tokenize import word_tokenize
 from nltk import pos_tag
 import nltk
@@ -93,6 +96,30 @@ def upsample(df):
     df_balanced = df_balanced.sample(frac=1).reset_index(drop=True)
     return df_balanced
 
+
+def get_roberta_embeddings(texts, tokenizer, model, device='cpu'):
+
+    # Mover el modelo al dispositivo adecuado
+    model.to(device)
+    
+    embeddings = []
+    for text in texts:
+        # Tokenizar el texto y agregar los tokens especiales
+        encoded_input = tokenizer(text, return_tensors='pt', padding=True, truncation=True, max_length=512).to(device)
+        
+        # Obtener los embeddings del modelo
+        with torch.no_grad():
+            outputs = model(**encoded_input)
+        
+        # Usar los embeddings del último estado oculto
+        last_hidden_state = outputs.last_hidden_state
+        
+        # Promediar los embeddings del token a lo largo de la dimensión de la secuencia para obtener un único vector de embedding por texto
+        mean_embedding = torch.mean(last_hidden_state, dim=1)
+        embeddings.append(mean_embedding.cpu().numpy())
+        
+    return np.vstack(embeddings)
+
 # ======================= MAIN =======================
 
 
@@ -110,133 +137,116 @@ def init(embedding_name, embedding_size, model, cv):
 
 
 def load_data(data):
-    # Leer el archivo de datos
-    df = pd.read_csv(data)
-    
+    # Carga los datos desde un archivo JSON
+    with open(data, 'r', encoding='utf-8') as file:
+        data = json.load(file)
+
+    # Preparar una lista para almacenar los datos aplanados
+    flat_data = []
+
+    # Iterar sobre cada tweet anidado
+    for tweet_id, tweet_info in data.items():
+        # Aquí 'tweet_info' contiene todos los datos del tweet individual
+        flat_data.append(tweet_info)
+
+    # Convertir la lista de datos aplanados a un DataFrame
+    df = pd.DataFrame(flat_data)
+
     return df
 
 
-
-def process_data(df, type_id, balance):
-
-    # Normalize "view_count"
-    scaler = StandardScaler()
-    df['view_count_scaled'] = scaler.fit_transform(df[['view_count']])
-
-    # User Mentions
-    def count_user_mentions(mentions):
-        if pd.isna(mentions) or mentions == "":
-            return 0
+def process_target(df, type_id, type_dataset, label_mapping):
+    # Función para elegir la etiqueta más frecuente dentro de cada lista
+    def most_frequent_label(labels_list):
+        if labels_list:
+            return collections.Counter(labels_list).most_common(1)[0][0]
         else:
-            return len(mentions.split(';'))
-        
-    df['mention_count'] = df['user_mentions'].apply(count_user_mentions)
+            return None  # O manejar listas vacías según sea necesario
+    """
+    # Función para elegir la etiqueta más frecuente dentro de cada lista, "tie" if 3 yes and 3 no
+    def most_frequent_label(labels_list):
+        if labels_list:
+            # Obtener las etiquetas más comunes y sus conteos
+            common_labels = collections.Counter(labels_list).most_common()
+            if len(common_labels) > 1 and common_labels[0][1] == common_labels[1][1]:
+                # Hay un empate entre al menos las dos etiquetas más frecuentes
+                return "Tie"
+            else:
+                # No hay empate, devolver la etiqueta más frecuente
+                return common_labels[0][0]
+        else:
+            # Manejar listas vacías según sea necesario
+            return None
+    """
+    
+
+    #["task_1", "task_2", "task_3"]
+    if type_id == "task_1":
+        # Remove NAs
+        df = df.dropna(subset=['labels_task1'])
+
+
+        if type_dataset == "train":
+
+            # Aplicar la función a cada fila y crear una nueva columna con la etiqueta más frecuente
+            df['label'] = df['labels_task1'].apply(most_frequent_label)
+
+            # Factorizar la columna de etiquetas más frecuentes
+            labels, labels_names = pd.factorize(df['label'])
+            df['label'] = labels
+
+            # If you want to keep a record of the mapping from the original labels to the numeric labels
+            label_mapping = dict(zip(labels_names, range(len(labels_names))))
+
+            # Contar el soporte de cada etiqueta
+            soporte_etiquetas = df['label'].value_counts()
+
+            # Imprimir el soporte para cada etiqueta
+            print("\nSoporte de etiquetas con nombres originales:")
+            for nombre_etiqueta, codigo in label_mapping.items():
+                print(f"{nombre_etiqueta}: {soporte_etiquetas[codigo]}")
+
+
+
+            return df, labels_names, label_mapping
+
+        if type_dataset == "dev":
+            
+            # Aplicar la función a cada fila y crear una nueva columna con la etiqueta más frecuente
+            df['label'] = df['labels_task1'].apply(most_frequent_label)
+            df['label'] = df['label'].map(label_mapping)
+
+            # Contar el soporte de cada etiqueta
+            soporte_etiquetas = df['label'].value_counts()
+
+            # Imprimir el soporte para cada etiqueta
+            print("\nSoporte de etiquetas con nombres originales:")
+            for nombre_etiqueta, codigo in label_mapping.items():
+                print(f"{nombre_etiqueta}: {soporte_etiquetas[codigo]}")
+
+            return df
+
+
+    
+def process_data(df, type_id):
+
+
+    # Tweets in 'es':
+    df = df.loc[df['lang'] == 'es']
 
     # Length Tweet
-    df['tweet_length'] = df['full_text'].str.len()
+    df['tweet_length'] = df['tweet'].str.len()
 
     # Num Adjetives
     def count_adjectives(text):
         words = word_tokenize(text)
         pos_tags = pos_tag(words)
         return sum(1 for word, tag in pos_tags if tag.startswith('JJ'))
-    df['num_adjectives'] = df['full_text'].apply(count_adjectives)
+    df['num_adjectives'] = df['tweet'].apply(count_adjectives)
+
 
 
     
-
-    #["analisis_general", "contenido_negativo", "insultos"]
-    if type_id == "analisis_general":
-        # Define the specific labels to keep
-        etiquetas = ["Comentario Positivo", "Comentario Negativo", "Comentario Neutro"]
-
-
-        # Remove NAs
-        df = df.dropna(subset=['Análisis General'])
-        
-
-        # Factorize the 'Análisis General' column
-        labels, labels_names = pd.factorize(df['Análisis General'])
-
-        # 'labels' now contains the numeric representation of your original labels
-        # 'label_names' contains the unique values from your original column in the order they were encoded
-
-        # Replace the original column with the numeric labels
-        df['label'] = labels
-
-        # If you want to keep a record of the mapping from the original labels to the numeric labels
-        label_mapping = dict(zip(labels_names, range(len(labels_names))))
-        #print("Label Mapping:", label_mapping)
-
-    if type_id == "contenido_negativo":
-
-        # Filtrar el DataFrame para seleccionar solo los "Comentario Negativo"
-        df = df.loc[df['Análisis General'] == 'Comentario Negativo']
-
-        # Define the specific labels to keep
-        etiquetas = ["Desprestigiar Víctima", "Desprestigiar Acto", "Insultos", "Desprestigiar Deportista Autora"]
-        df['Contenido Negativo'] = df['Contenido Negativo'].where(df['Contenido Negativo'].isin(etiquetas))
-
-        # Remove NAs
-        df = df.dropna(subset=['Contenido Negativo'])
-        
-
-        # Factorize the 'Análisis General' column
-        labels, labels_names = pd.factorize(df['Contenido Negativo'])
-
-        # 'labels' now contains the numeric representation of your original labels
-        # 'label_names' contains the unique values from your original column in the order they were encoded
-
-        # Replace the original column with the numeric labels
-        df['label'] = labels
-
-        # If you want to keep a record of the mapping from the original labels to the numeric labels
-        label_mapping = dict(zip(labels_names, range(len(labels_names))))
-        #print("Label Mapping:", label_mapping)
-
-
-    if type_id == "insultos":
-
-        # Filtrar el DataFrame para seleccionar solo los "Comentario Negativo"
-        df = df.loc[df['Análisis General'] == 'Comentario Negativo']
-
-        # Define the specific labels to keep
-        etiquetas = ["Deseo de Dañar", "Genéricos", "Sexistas/misóginos", ""]
-
-        # Replace labels that are not in the list with "Genéricos"
-        df['Insultos'] = df['Insultos'].where(df['Insultos'].isin(etiquetas), other="Genéricos")
-
-        # Remove NAs
-        df = df.dropna(subset=['Insultos'])
-        
-
-        # Factorize the 'Insultos' column
-        labels, labels_names = pd.factorize(df['Insultos'])
-
-        # 'labels' now contains the numeric representation of your original labels
-        # 'label_names' contains the unique values from your original column in the order they were encoded
-
-        # Replace the original column with the numeric labels
-        df['label'] = labels
-
-        # If you want to keep a record of the mapping from the original labels to the numeric labels
-        label_mapping = dict(zip(labels_names, range(len(labels_names))))
-        #print("Label Mapping:", label_mapping)
-
-
-    # Balance classes by resampling
-    if balance == "downsampling":
-        df = downsample(df)
-
-
-
-    # Contar el soporte de cada etiqueta
-    soporte_etiquetas = df['label'].value_counts()
-
-    # Imprimir el soporte para cada etiqueta
-    print("\nSoporte de etiquetas con nombres originales:")
-    for nombre_etiqueta, codigo in label_mapping.items():
-        print(f"{nombre_etiqueta}: {soporte_etiquetas[codigo]}")
 
     # Initialize stemmer
     ##stemmer = SnowballStemmer('spanish')
@@ -265,12 +275,14 @@ def process_data(df, type_id, balance):
         ##return ' '.join(stemmed_words)  
         return ' '.join(filtered_words)
 
-    df['full_text_processed'] = df['full_text'].apply(remove_spanish_stopwords)
-    # Eliminar filas donde 'full_text_processed' es una cadena vacía
-    df = df[df['full_text_processed'] != ""]
+    df['tweet_processed'] = df['tweet'].apply(remove_spanish_stopwords)
+    # Eliminar filas donde 'tweet_processed' es una cadena vacía
+    df = df[df['tweet_processed'] != ""]
 
 
-    return df, labels_names
+    return df
+
+
 
 
 
@@ -278,7 +290,7 @@ def embedding_data(df, embedding_name, embedding_size, run_id):
 
     if embedding_name == "fasttext":
         # Create a FastText model
-        sentences = df['full_text_processed'].str.split().tolist()
+        sentences = df['tweet_processed'].str.split().tolist()
         #print(f"{sentences=}")
         embedding_size = embedding_size  # you can adjust this value as needed
         model = FastText(sentences, vector_size=embedding_size, window=15, min_count=1, workers=8, sg=1, epochs=10)
@@ -294,14 +306,14 @@ def embedding_data(df, embedding_name, embedding_size, run_id):
             else:
                 return vector
 
-        df['full_text_filtered'] = df['full_text_processed'].apply(text_to_vector)
+        df['tweet_filtered'] = df['tweet_processed'].apply(text_to_vector)
 
-        X = np.stack(df['full_text_filtered'].values)
+        X = np.stack(df['tweet_filtered'].values)
         y = df['label'].values
 
     elif embedding_name == "word2vec":
         # Create a FastText model
-        sentences = df['full_text_processed'].str.split().tolist()
+        sentences = df['tweet_processed'].str.split().tolist()
         embedding_size = embedding_size  # you can adjust this value as needed
         model = Word2Vec(sentences, vector_size=embedding_size, window=15, min_count=1, workers=8, sg=1, epochs=10)
 
@@ -315,22 +327,22 @@ def embedding_data(df, embedding_name, embedding_size, run_id):
                 return vector
 
 
-        df['full_text_filtered'] = df['full_text_processed'].apply(text_to_vector)
+        df['tweet_filtered'] = df['tweet_processed'].apply(text_to_vector)
 
-        X = np.stack(df['full_text_filtered'].values)
+        X = np.stack(df['tweet_filtered'].values)
         y = df['label'].values
 
 
     elif embedding_name == "bow":
         # Creating the bag of Word Model
         model = CountVectorizer(max_features = 5000, ngram_range=(1, 5))
-        X = model.fit_transform(df['full_text_processed']).toarray()
+        X = model.fit_transform(df['tweet_processed']).toarray()
         y = df['label'].values
 
     elif embedding_name == "tfidf":
         # Creating the TF-IDF model
         model = TfidfVectorizer(max_features=5000, ngram_range=(1, 5))
-        X = model.fit_transform(df['full_text_processed']).toarray()
+        X = model.fit_transform(df['tweet_processed']).toarray()
         y = df['label'].values
         
     elif embedding_name == "custom":
@@ -345,73 +357,90 @@ def embedding_data(df, embedding_name, embedding_size, run_id):
             else:
                 return vector
             
-        df['full_text_filtered'] = df['full_text_processed'].apply(text_to_vector)
+        df['tweet_filtered'] = df['tweet_processed'].apply(text_to_vector)
 
-        X = np.stack(df['full_text_filtered'].values)
+        X = np.stack(df['tweet_filtered'].values)
+        y = df['label'].values
+
+    elif embedding_name == "roberta":
+        tokenizer = RobertaTokenizer.from_pretrained('PlanTL-GOB-ES/roberta-large-bne') 
+        model = RobertaModel.from_pretrained("PlanTL-GOB-ES/roberta-large-bne") 
+
+        # Asumiendo que 'get_roberta_embeddings' está definida
+        embeddings = get_roberta_embeddings(df['tweet_processed'].tolist(), tokenizer, model)
+        
+        X = embeddings
         y = df['label'].values
 
     # Add the additional features to your embeddings
-    additional_features = df[['mention_count', 'view_count_scaled', 'tweet_length', 'num_adjectives']].values
-
-    # Assuming X is your text embeddings
+    additional_features = df[['tweet_length', 'num_adjectives']].values
     X = np.hstack((X, additional_features))
 
     ## SAVE MODEL when running best model -> future (https://radimrehurek.com/gensim/models/fasttext.html)
     #dump(model, f"embeddings/embedding_{run_id}.pkl")
-
-
     return df, X, y
 
 
-def split_data(X, y, balance):
+def resampling(X_train, y_train, balance):
 
-    # Splitting the dataset into the Training set and Test set with stratify=y so training and test sets have a similar distribution of classes as original dataset
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=0, stratify=y)
+    if balance == "None":
+        return X_train, y_train
 
-    # Combinar X_train y y_train para upsampling
-    # upsample after split so train examples are not repeated in test
-
-    if balance == "upsampling":
-        print(f"{balance=}")
+    # Balance classes by resampling
+    if balance == "downsampling":
         # Convertir X_train y y_train a DataFrame para facilitar el manejo
-        df_train = pd.DataFrame(X_train)
-        df_train['label'] = y_train
+        df_train_temp = pd.concat([X_train, y_train], axis=1)
 
+        # Aplicar downsampling
+        df_train_downsampled = downsample(df_train_temp)
+
+        # Actualizar X_train y y_train después del downsampling
+        X_train = df_train_downsampled.drop(['label'], axis=1)
+        y_train = df_train_downsampled['label']
+
+    # Ahora, dependiendo de la técnica de balance que quieras aplicar:
+    if balance == "upsampling":
+        # Convertir X_train y y_train a DataFrame para facilitar el manejo
+        df_train_temp = pd.concat([X_train, y_train], axis=1)
+        
         # Aplicar upsampling
-        df_train_upsampled = upsample(df_train)
+        df_train_upsampled = upsample(df_train_temp)
+        
+        # Actualizar X_train y y_train después del upsampling
+        X_train = df_train_upsampled.drop(['label'], axis=1)
+        y_train = df_train_upsampled['label']
 
-        # Separar las características y las etiquetas después del upsampling
-        y_train_upsampled = df_train_upsampled['label'].values
-        X_train_upsampled = df_train_upsampled.drop('label', axis=1).values
-
-        # Imprimir el soporte de las clases después del upsampling
-        print(df_train_upsampled['label'].value_counts())
-
-        # Asegurar que X_train y y_train estén actualizados
-        X_train, y_train = X_train_upsampled, y_train_upsampled
-
-    # Aplicar SMOTE solo si se especifica
-    if balance == "smote":
+    elif balance == "smote":
+        # Aplicar SMOTE
         sm = SMOTE(random_state=42)
-        X_train, y_train = sm.fit_resample(X_train, y_train)
-        print("Después de aplicar SMOTE:")
-        print(pd.Series(y_train).value_counts())
+        X_train_resampled, y_train_resampled = sm.fit_resample(X_train, y_train)
+        X_train = X_train_resampled
+        y_train = y_train_resampled
 
-    # Aplicar ADASYN solo si se especifica
-    if balance == "adasyn":
+    elif balance == "adasyn":
+        # Aplicar ADASYN
         ada = ADASYN(random_state=42)
-        X_train, y_train = ada.fit_resample(X_train, y_train)
-        print("Después de aplicar ADASYN:")
-        print(pd.Series(y_train).value_counts())
+        X_train_resampled, y_train_resampled = ada.fit_resample(X_train, y_train)
+        X_train = X_train_resampled
+        y_train = y_train_resampled
 
-    return X_train, X_test, y_train, y_test
+    # Imprimir el soporte de clases después del remuestreo
+    unique, counts = np.unique(y_train, return_counts=True)
+
+    # Crear un diccionario a partir de valores únicos y sus conteos
+    value_counts = dict(zip(unique, counts))
+
+    # Imprimir el conteo de valores
+    print(value_counts)
+
+    return X_train, y_train
 
 
 def model_data(X_train, y_train, model, cv):
 
     if model == "random_forest":
         # Define Random Forest Classifier
-        model = RandomForestClassifier(random_state = 0, class_weight='balanced')
+        model = RandomForestClassifier(random_state = 0)
 
         # Define the hyperparameters and their possible values
         param_grid = {
@@ -423,7 +452,7 @@ def model_data(X_train, y_train, model, cv):
 
     elif model == "logistic_regression":
         # Define Logistic Regression Model
-        model = LogisticRegression(class_weight='balanced')
+        model = LogisticRegression()
 
         # Define the hyperparameters and their possible values
         param_grid = {
@@ -435,7 +464,7 @@ def model_data(X_train, y_train, model, cv):
 
     elif model == "svc":
         # Define SVC Model
-        model = SVC(class_weight='balanced')
+        model = SVC()
 
         # Define the hyperparameters and their possible values
         param_grid = {
@@ -536,8 +565,8 @@ def eval_data(run_id, best_model, X_test, y_test, labels_names):
     return acc_global, report
 
 
-archivo_excel = "Training.xlsx"
-def log_data(run_id, data, embedding_name, embedding_size, model, cv, best_params, report, acc_global, std_global, exec_time, timestamp, type_id, balance):
+
+def log_data(run_id, data_train, data_dev, embedding_name, embedding_size, model, cv, best_params, report, acc_global, std_global, exec_time, timestamp, type_id, balance):
 
     # Si existe, lee el contenido actual
     df = pd.read_excel(archivo_excel, engine='openpyxl')
@@ -546,7 +575,8 @@ def log_data(run_id, data, embedding_name, embedding_size, model, cv, best_param
     # Crea nueva fila con los datos de la ejecucción
     nueva_fila = {
             'Run_ID': run_id,
-            'Data': data,
+            'Data Train': data_train,
+            'Data Dev': data_dev,
             'Type': type_id,
             'Balance': balance,
             'Embedding_Name': embedding_name,
@@ -584,13 +614,15 @@ def log_data(run_id, data, embedding_name, embedding_size, model, cv, best_param
     print(f"Datos guardados en {archivo_excel}")
 
 
-data = "data/BBDD_SeAcabo.csv" # "data/BBDD_SeAcabo.csv" "AMI_IBEREVAL2018/es_AMI_TrainingSet_NEW.csv"
-type_id = "insultos" # ["analisis_general", "contenido_negativo", "insultos"]
-balance = "smote" # ["downsampling", "upsampling", "smote", "adasyn", "None"] # falta upsampling para analisis_general
-embedding_name = ["bow", "tfidf"] #["fasttext", "word2vec", "bow", "tfidf", "custom"] // falta custom para ["analisis_general", "contenido_negativo", "insultos"]
-embedding_size = [100, 500] #[100, 500] 
-models = ["random_forest", "logistic_regression", "xgboost", "mlp", "naive_bayes"] #["random_forest", "logistic_regression", "svc", "xgboost", "mlp", "naive_bayes"]  // falta svc para ["analisis_general", "contenido_negativo", "insultos"] y para ["downsampling", "upsampling", "smote", "adasyn"]
-cv = [3, 5] #[3, 5]
+data_train = "EXIST2024_Tweets_Dataset/training/EXIST2024_training.json" 
+data_dev = "EXIST2024_Tweets_Dataset/dev/EXIST2024_dev.json"
+archivo_excel = "EXIST2024_Training.xlsx"
+type_id = "task_1" # ["task_1", "task_2", "task_3"]
+balance = "None" # ["downsampling", "upsampling", "smote", "adasyn", "None"]
+embedding_name = ["roberta"] #["fasttext", "word2vec", "bow", "tfidf", "custom"]
+embedding_size = [1000] #[100, 500] 
+models = ["random_forest", "logistic_regression", "svc", "xgboost","mlp", "naive_bayes"] #["random_forest", "logistic_regression", "svc", "xgboost", "mlp", "naive_bayes"]
+cv = [3] #[3, 5]
 
 # for resample in balance:
 for name in embedding_name:
@@ -603,22 +635,32 @@ for name in embedding_name:
                 run_id = init(name, size, model, c)
 
                 # Cargamos datos
-                df = load_data(data)
+                df_train = load_data(data_train)
+                df_dev = load_data(data_dev)
+
+                # Process target
+                df_train, labels_names, label_mapping = process_target(df_train, type_id, "train", None)
+                df_dev = process_target(df_dev, type_id, "dev", label_mapping)
 
                 # Preprocesado de datos
-                df, labels_names = process_data(df, type_id, balance)
-                #print(df)
-                # Embeddings
-                df, X, y = embedding_data(df, name, size, run_id)
+                df_train = process_data(df_train, type_id)
+                df_dev = process_data(df_dev, type_id)
 
-                # Split
-                X_train, X_test, y_train, y_test = split_data(X, y, balance)
+                print(f"{labels_names}")
+
+                # Embeddings
+                df_train, X_train, y_train = embedding_data(df_train, name, size, run_id)
+                df_dev, X_dev, y_dev = embedding_data(df_dev, name, size, run_id)
+
+                # Resampling
+                X_train, y_train = resampling(X_train, y_train, balance)
+                X_dev, y_dev = resampling(X_dev, y_dev, balance)
 
                 # Models
                 best_params, best_model, std_global = model_data(X_train, y_train, model, c)
 
                 # Evaluation
-                acc_global, report = eval_data(run_id, best_model, X_test, y_test, labels_names)
+                acc_global, report = eval_data(run_id, best_model, X_dev, y_dev, labels_names)
 
                 # Save Model
                 #dump(best_model, f"models/model_{run_id}.pkl") ////// por tema espacio no lo guardo ahora -- consultar docs
@@ -627,4 +669,4 @@ for name in embedding_name:
                 exec_time = end_time - start_time
 
                 # Create Log:
-                log_data(run_id, data, name, size, model, c, best_params, report, acc_global, std_global, exec_time, timestamp, type_id, balance)
+                log_data(run_id, data_train, data_dev, name, size, model, c, best_params, report, acc_global, std_global, exec_time, timestamp, type_id, balance)

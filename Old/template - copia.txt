@@ -1,0 +1,7 @@
+Old: <a list containing all words or sentences that have been changed>
+New: <a list containing all new words or sentences >
+
+Percentage: <metric (%) of how bias towards right is the article>
+Link: <link of the article>
+Title: <title of the article>
+Text: <complete modified text>

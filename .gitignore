@@ -1,1 +1,17 @@
 *csv
+embeddings
+models
+*png
+*jpg
+*pkl
+*model
+*npy
+*joblib
+OpenAI
+EXIST2024_Memes_Dataset
+EXIST2024_Tweets_Dataset
+EXIST 2024 Dataset.zip
+EXIST 2024/*.pdf
+**results
+AMI_IBEREVAL2018
+__pycache__

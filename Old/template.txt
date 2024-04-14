@@ -1,0 +1,8 @@
+Old: <a list containing all words or sentences that have been changed>
+New: <a list containing all new words or sentences >
+
+Count: <count of the number of women cited>
+Percentage: <metric (%) of how bias towards men is the article>
+Link: <link of the article>
+Title: <title of the article>
+Text: <complete modified text>

@@ -1,3 +1,4 @@
+import ast
 import uuid
 import pandas as pd
 from sklearn.utils import resample
@@ -83,3 +84,9 @@ def get_roberta_embeddings(texts, tokenizer, model, device='cpu'):
         embeddings.append(mean_embedding.cpu().numpy())
         
     return np.vstack(embeddings)
+
+
+
+def convert_embedding_to_list(list_embedding):
+    num_list = ast.literal_eval(list_embedding)
+    return num_list

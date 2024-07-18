@@ -21,12 +21,12 @@ from pysentimiento.preprocessing import preprocess_tweet
 # ======================= PARAMS =======================
 archivo_excel = "Training.xlsx"
 
-data = "data/BBDD_SeAcabo.csv" # "data/BBDD_SeAcabo.csv" "AMI_IBEREVAL2018/es_AMI_TrainingSet_NEW.csv"
-type_id = "insultos" # ["analisis_general", "contenido_negativo", "insultos"]
-balance = "smote" # ["downsampling", "upsampling", "smote", "adasyn", "None"] # falta "smote", "adasyn" para analisis_general y contenido_negativo
-embedding_name = ["robertuito"] #["fasttext", "word2vec", "bow", "tfidf", "custom", "roberta", "beto", "bert-multi", "xlm-roberta-base", "robertuito"] // falta custom para ["analisis_general", "contenido_negativo", "insultos"]
-embedding_size = [500] #[100, 500] 
-models = ["random_forest", "logistic_regression", "xgboost", "mlp", "naive_bayes"] #["random_forest", "logistic_regression", "svc", "xgboost", "mlp", "naive_bayes"]  // falta svc para ["analisis_general", "contenido_negativo", "insultos"] y para ["downsampling", "upsampling", "smote", "adasyn"]
+data = "../data/BBDD_SeAcabo.csv" # "data/BBDD_SeAcabo.csv" "AMI_IBEREVAL2018/es_AMI_TrainingSet_NEW.csv"
+type_id = "analisis_general" # ["analisis_general", "contenido_negativo", "insultos"]
+balance = "smote" # ["downsampling", "upsampling", "smote", "adasyn", "None"] 
+embedding_name = ["text-embedding-3-large"] #["fasttext", "word2vec", "bow", "tfidf", "custom", "roberta", "beto-cased", "beto-uncased", "bert-multi", "xlm-roberta-base", "robertuito", "text-embedding-3-large"] // falta custom para ["analisis_general", "contenido_negativo", "insultos"]
+embedding_size = [0] #[100, 500] 
+models = ["svc"] #["random_forest", "logistic_regression", "xgboost", "mlp", "naive_bayes"], "svc"  // falta svc para ["analisis_general", "contenido_negativo", "insultos"] y para ["downsampling", "upsampling", "smote", "adasyn"]
 cv = [5] #[3, 5]
 
 
@@ -41,19 +41,16 @@ for name in embedding_name:
                 run_id = init(name, size, model, c)
 
                 # Cargamos datos
-                df = load_data(data)
-
-                # Filtrar por type_id
-                df, labels_names = filter_by_type(df, type_id, balance)
+                df = load_data(dataset_name=data, embedding_name=name)
 
                 # Preprocesado de datos
-                if embedding_name == "robertuito":
-                    df['full_text'] = df['full_text'].apply(lambda x: preprocess_tweet(x, lang="es", preprocess_handles=False))
-                else:
-                    df = process_data(df)
+                df, labels_names = process_data(df, type_id, balance)
+
+                ##if embedding_name == "robertuito":
+                    ##df['full_text'] = df['full_text'].apply(lambda x: preprocess_tweet(x, lang="es", preprocess_handles=False))
 
                 # Embeddings
-                df, X, y = embedding_data(df, name, size)
+                df, X, y = embedding_data(df, type_id, name, size)
 
                 # Split
                 X_train, X_test, y_train, y_test = split_data(X, y, balance)

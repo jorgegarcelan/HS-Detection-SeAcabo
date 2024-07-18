@@ -1,4 +1,5 @@
 from utils import *
+from process_data import *
 
 import numpy as np
 from transformers import BertTokenizer, DistilBertTokenizer, BertModel, BertForSequenceClassification, AdamW, get_linear_schedule_with_warmup, RobertaTokenizer, RobertaModel, XLMRobertaModel, AutoTokenizer
@@ -8,7 +9,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
-def embedding_data(df, embedding_name, embedding_size):
+def embedding_data(df, type_id, embedding_name, embedding_size):
 
     if embedding_name == "fasttext":
         # Create a FastText model
@@ -93,8 +94,17 @@ def embedding_data(df, embedding_name, embedding_size):
         X = embeddings
         y = df['label'].values
 
-    elif embedding_name == "beto":
+    elif embedding_name == "beto-cased":
         tokenizer = BertTokenizer.from_pretrained('dccuchile/bert-base-spanish-wwm-cased') #beto
+        model = BertModel.from_pretrained("dccuchile/bert-base-spanish-wwm-cased") #beto
+
+        embeddings = get_roberta_embeddings(df['full_text_processed'].tolist(), tokenizer, model)
+        
+        X = embeddings
+        y = df['label'].values
+    
+    elif embedding_name == "beto-uncased":
+        tokenizer = BertTokenizer.from_pretrained('dccuchile/bert-base-spanish-wwm-uncased') #beto
         model = BertModel.from_pretrained("dccuchile/bert-base-spanish-wwm-cased") #beto
 
         embeddings = get_roberta_embeddings(df['full_text_processed'].tolist(), tokenizer, model)
@@ -126,13 +136,33 @@ def embedding_data(df, embedding_name, embedding_size):
         X = embeddings['input_ids']
         y = df['label'].values
 
+    elif embedding_name == "text-embedding-3-large":
+        #embeddings = pd.read_csv('C:/Users/jorge/Desktop/UNI/4-CUARTO/4-2-TFG/CODE/Gender-Bias/OpenAI/seacabo_embeddings.csv')
+        # Filter by type
+        #embeddings, _ = process_data(embeddings, type_id, balance="None")
+        df['embeddings'] = df['embeddings'].apply(lambda x : convert_embedding_to_list(x)) 
 
+        X = np.stack(df['embeddings'].values).astype(np.float32)
+        # Ensure that X is a 2D array
+        if X.ndim == 1:
+            X = X.reshape(-1, 1)
+
+        y = df['label'].values.astype(np.float32)
+
+    # Print dimensions of X
+    print(f"Dimensions of X: {X.shape}")
 
     # Add the additional features to your embeddings
-    additional_features = df[['mention_count', 'view_count_scaled', 'tweet_length', 'num_adjectives']].values
+    additional_features = df[['mention_count', 'view_count_scaled', 'tweet_length', 'num_adjectives']].values.astype(np.float32)
+
+    # Print dimensions of additional_features
+    print(f"Dimensions of additional_features: {additional_features.shape}")
 
     # Assuming X is your text embeddings
     X = np.hstack((X, additional_features))
+
+    # Print dimensions of the final concatenated array
+    print(f"Dimensions of X after concatenation: {X.shape}")
 
     ## SAVE MODEL when running best model -> future (https://radimrehurek.com/gensim/models/fasttext.html)
     #dump(model, f"embeddings/embedding_{run_id}.pkl")

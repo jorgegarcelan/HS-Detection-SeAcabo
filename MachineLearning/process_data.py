@@ -256,4 +256,6 @@ def process_data(df, type_id, balance):
     # Filter by type
     df, labels_names = filter_by_type(df, type_id, balance)
 
+    df.to_csv(f"processed_data_{type_id}.csv", header=True)
+
     return df, labels_names

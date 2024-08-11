@@ -22,11 +22,11 @@ from pysentimiento.preprocessing import preprocess_tweet
 archivo_excel = "Training.xlsx"
 
 data = "../data/BBDD_SeAcabo.csv" # "data/BBDD_SeAcabo.csv" "AMI_IBEREVAL2018/es_AMI_TrainingSet_NEW.csv"
-type_id = "analisis_general" # ["analisis_general", "contenido_negativo", "insultos"]
-balance = "smote" # ["downsampling", "upsampling", "smote", "adasyn", "None"] 
-embedding_name = ["text-embedding-3-large"] #["fasttext", "word2vec", "bow", "tfidf", "custom", "roberta", "beto-cased", "beto-uncased", "bert-multi", "xlm-roberta-base", "robertuito", "text-embedding-3-large"] // falta custom para ["analisis_general", "contenido_negativo", "insultos"]
+type_id = "insultos" # ["analisis_general", "contenido_negativo", "insultos"]
+balance = "None" # ["downsampling", "upsampling", "smote", "adasyn", "None"] 
+embedding_name = ["fasttext", "word2vec", "bow", "tfidf"] #["fasttext", "word2vec", "bow", "tfidf", "custom", "roberta", "beto-cased", "beto-uncased", "bert-multi", "xlm-roberta-base", "robertuito", "text-embedding-3-large"] // falta custom para ["analisis_general", "contenido_negativo", "insultos"]
 embedding_size = [0] #[100, 500] 
-models = ["svc"] #["random_forest", "logistic_regression", "xgboost", "mlp", "naive_bayes"], "svc"  // falta svc para ["analisis_general", "contenido_negativo", "insultos"] y para ["downsampling", "upsampling", "smote", "adasyn"]
+models = ["random_forest", "logistic_regression", "xgboost", "mlp", "naive_bayes"] #["random_forest", "logistic_regression", "xgboost", "mlp", "naive_bayes"], "svc"  // falta svc para ["analisis_general", "contenido_negativo", "insultos"] y para ["downsampling", "upsampling", "smote", "adasyn"]
 cv = [5] #[3, 5]
 
 

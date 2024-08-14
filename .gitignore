@@ -10,7 +10,7 @@ models
 *xlsx
 *.xlsx
 *.txt
-OpenAI
+OpenAI/config.ini
 EXIST2024_Memes_Dataset
 EXIST2024_Tweets_Dataset
 EXIST 2024 Dataset.zip

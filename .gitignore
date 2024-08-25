@@ -1,19 +1,18 @@
+__pycache__
+data
 *csv
 embeddings
-models
+embeddings_20-12-23
+*pkl
+*npy
+*model
+*joblib
+EXIST_2024
+Lexicons
+*txt
 *png
 *jpg
-*pkl
-*model
-*npy
-*joblib
+Training*
 *xlsx
-*.xlsx
-*.txt
-OpenAI/config.ini
-EXIST2024_Memes_Dataset
-EXIST2024_Tweets_Dataset
-EXIST 2024 Dataset.zip
-EXIST 2024/*.pdf
-AMI_IBEREVAL2018
-__pycache__
+*ini
+WebApp

@@ -42,7 +42,7 @@ openai.api_key = config['DEFAULT']['OPENAI_API_KEY']
 DATASET = pd.read_csv("C:/Users/jorge/Desktop/UNI/4-CUARTO/4-2-TFG/CODE/Gender-Bias/data/BBDD_SeAcabo.csv") #seacabo_2023.csv
 MODELS = ["lmstudio-community/Meta-Llama-3-8B-Instruct-GGUF", "lmstudio-ai/gemma-2b-it-GGUF", "TheBloke/Mistral-7B-Instruct-v0.2-GGUF", "lmstudio-community/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf"] #["lmstudio-community/Meta-Llama-3-8B-Instruct-GGUF", "lmstudio-ai/gemma-2b-it-GGUF", "TheBloke/Mistral-7B-Instruct-v0.2-GGUF", "lmstudio-community/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf"] # ["gpt-4o-mini", "lmstudio-community/Meta-Llama-3-8B-Instruct-GGUF", "lmstudio-ai/gemma-2b-it-GGUF", "TheBloke/Mistral-7B-Instruct-v0.2-GGUF"] #"gpt-4-0613" #"gpt-4-turbo" # https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo || "lmstudio-community/Meta-Llama-3-8B-Instruct-GGUF"||"lmstudio-ai/gemma-2b-it-GGUF"||"TheBloke/Mistral-7B-Instruct-v0.2-GGUF"
 TYPES = ["insultos"] # ["analisis_general", "contenido_negativo", "insultos"]
-ARCHIVO_EXCEL = "Training_LLMs.xlsx"
+ARCHIVO_EXCEL = "Training_GenAI.xlsx"
 TEMPERATURES = [0.1, 0.5]
 PREPROCCESED_DATA = False
 

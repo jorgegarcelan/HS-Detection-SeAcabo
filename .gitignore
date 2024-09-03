@@ -1,3 +1,4 @@
+# Files to ignore
 __pycache__
 data
 *csv
@@ -12,7 +13,11 @@ Lexicons
 *txt
 *png
 *jpg
-Training*
 *xlsx
 *ini
 WebApp
+
+# Except
+!MachineLearning/ML Experiments/*xlsx
+!DeepLearning/DL Experiments/*xlsx
+!GenerativeAI/GenAI Experiments/*xlsx

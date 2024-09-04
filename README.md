@@ -1,6 +1,20 @@
-# Detection of Gender-Based Hate Speech against Women in Social Media via Natural Language Processing: An Analysis of the #SeAcabó Movement
+# Detection of Gender-Based Hate Speech against Women in Social Media via Natural Language Processing: An Analysis of the *#SeAcabó* Movement
 
-This repository contains the code and resources for the thesis titled **"Detection of Gender-Based Hate Speech against Women in Social Media via Natural Language Processing: An Analysis of the #SeAcabó Movement"**. The project focuses on analyzing hate speech directed at women on social media using various machine learning, deep learning, and generative AI techniques.
+[![License](https://img.shields.io/badge/license-Creative%20Commons%20Attribution%20%E2%80%93%20Non%20Commercial%20%E2%80%93%20Non%20Derivatives-blue)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+[![Python Version](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/downloads/)
+
+
+## Table of Contents
+
+1. [Project Overview](#project-overview)
+2. [Repository Structure](#repository-structure)
+3. [Author](#author)
+4. [License](#license)
+
+
+## Project Overview
+
+This repository contains the code and resources for the thesis titled **"Detection of Gender-Based Hate Speech against Women in Social Media via Natural Language Processing: An Analysis of the *#SeAcabó* Movement"**. The project focuses on analyzing hate speech directed at women on social media using various machine learning, deep learning, and generative AI techniques.
 
 ## Repository Structure
 
@@ -47,11 +61,6 @@ The repository is organized into three main directories, each containing scripts
 
 ## License
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Cc_by-nc-nd_icon.svg/2560px-Cc_by-nc-nd_icon.svg.png" alt="Creative Commons Logo" width="150"/>
+
 This work is licensed under Creative Commons **Attribution – Non Commercial – Non Derivatives**.
-
-## Setup and Usage
-
-1. **Clone the Repository**
-
-   ```bash
-   git clone <repository-url>

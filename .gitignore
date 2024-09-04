@@ -18,6 +18,7 @@ Lexicons
 WebApp
 
 # Except
+!requirements.txt
 !MachineLearning/ML Experiments/*xlsx
 !DeepLearning/DL Experiments/*xlsx
 !GenerativeAI/GenAI Experiments/*xlsx
